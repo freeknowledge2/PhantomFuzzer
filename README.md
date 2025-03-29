@@ -15,6 +15,7 @@
 ⠋⠴⣬⣨⠣⣾⣷⣥⡽⠆⠀⠀⠁⠉⠀⠀⠀⠀⢀⠀⠀⣼⠁⠀⢀⣄⡦⠭⠤⠶⠤⣬⣍⣻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
 ⣧⣤⣿⡟⢄⡙⠛⠉⠁⢃⠐⠀⠀⠀⠀⠀⠜⠀⠈⣀⡿⠋⠀⣸⡿⠛⠁⠀⠀⠘⠀⢉⠉⠹⢿⢟⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
 ⡿⣿⣿⣿⣎⠀⠀⠀⠀⠘⠀⠁⠀⠀⠀⠀⠀⠀⠀⠟⠑⠀⠀⠈⠀⠀⠀⠀⠠⢤⠤⣨⣷⡀⠀⣚⡋⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+
 PhantomFuzzer is an advanced security testing toolkit that combines traditional fuzzing techniques with machine learning capabilities to detect vulnerabilities in web applications, APIs, protocols, and files.
 
 ## Features
