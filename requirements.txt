@@ -1,0 +1,63 @@
+# Core dependencies
+numpy>=1.24.0
+pandas>=2.0.0
+scipy>=1.11.0
+
+# Machine Learning
+scikit-learn>=1.3.0
+tensorflow>=2.12.0
+keras>=2.12.0
+torch>=2.0.0
+transformers>=4.30.0
+nltk>=3.8.0
+gensim>=4.3.0
+spacy>=3.6.0
+
+# Data processing and visualization
+matplotlib>=3.7.0
+seaborn>=0.12.0
+plotly>=5.15.0
+
+# Web and networking
+requests>=2.31.0
+beautifulsoup4>=4.12.0
+selenium>=4.11.0
+aiohttp>=3.8.0
+fastapi>=0.103.0
+uvicorn>=0.23.0
+httpx>=0.25.0
+
+# Security and fuzzing tools
+pycryptodome>=3.18.0
+python-nmap>=0.7.1
+scapy>=2.5.0
+pyOpenSSL>=23.2.0
+pyjwt>=2.8.0
+python-magic>=0.4.27
+yara-python>=4.2.0
+cryptography>=37.0.0
+paramiko>=3.3.0
+faker>=13.0.0
+pillow>=10.0.0
+
+# Database
+sqlalchemy>=2.0.0
+pymongo>=4.5.0
+
+# Utilities
+tqdm>=4.66.0
+click>=8.1.0
+python-dotenv>=1.0.0
+pyyaml>=6.0.0
+rich>=13.5.0
+loguru>=0.7.0
+
+# Testing
+pytest>=7.4.0
+pytest-cov>=4.1.0
+
+# Development
+black>=23.7.0
+isort>=5.12.0
+flake8>=6.1.0
+mypy>=1.5.0

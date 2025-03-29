@@ -1,0 +1,22 @@
+Metadata-Version: 2.2
+Name: phantomfuzzer
+Version: 0.1.0
+Summary: PhantomFuzzer: Advanced Security Testing Toolkit
+Author: Security Research Team
+Author-email: info@phantomfuzzer.com
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Security
+Requires-Python: >=3.8
+Requires-Dist: pyyaml
+Requires-Dist: click
+Requires-Dist: requests
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary

@@ -1,0 +1,91 @@
+.TH PHANTOMFUZZER 1 "March 2025" "PhantomFuzzer 0.1.0" "User Commands"
+.SH NAME
+phantomfuzzer \- Advanced Security Testing Toolkit
+.SH SYNOPSIS
+.B phantomfuzzer
+[\fIOPTIONS\fR]
+\fICOMMAND \fR[\fIARGS\fR]...
+.SH DESCRIPTION
+.PP
+PhantomFuzzer is a comprehensive toolkit for security testing, fuzzing, and vulnerability discovery. It provides multiple modules for security professionals:
+.PP
+.IP \(bu 4
+\fBFUZZER\fR: Test applications for vulnerabilities by sending unexpected inputs
+.IP \(bu 4
+\fBSCANNER\fR: Identify security issues in web applications, APIs, and files
+.IP \(bu 4
+\fBPAYLOAD\fR: Generate attack payloads for various security testing scenarios
+.SH OPTIONS
+.TP
+.B \-\-version
+Show the version and exit.
+.TP
+.B \-\-debug
+Enable debug logging.
+.TP
+.B \-\-help
+Show help message and exit.
+.SH COMMANDS
+.SS "payload"
+Generate attack payloads for security testing.
+.PP
+This command provides access to the PayloadGenerator functionality, allowing you to generate various types of attack payloads for security testing. All generated payloads will be output to ensure comprehensive results.
+.PP
+Subcommands:
+.TP
+.B list
+List available payload categories and subcategories.
+.TP
+.B generate
+Generate payloads of a specific type.
+.SS "fuzzer"
+Run various types of fuzzers against targets.
+.PP
+This command provides access to different fuzzer types in PhantomFuzzer, including API fuzzing, protocol fuzzing, and input fuzzing. All findings will be outputted to ensure comprehensive results.
+.PP
+Subcommands:
+.TP
+.B api
+Fuzz API endpoints for vulnerabilities.
+.TP
+.B protocol
+Fuzz network protocols for vulnerabilities.
+.TP
+.B input
+Fuzz application inputs for vulnerabilities.
+.SS "scanner"
+Run various types of scanners against targets.
+.PP
+This command provides access to different scanner types in PhantomFuzzer, including web scanning, API scanning, and file scanning. All findings will be outputted to ensure comprehensive results.
+.PP
+Subcommands:
+.TP
+.B web
+Scan web applications for vulnerabilities.
+.TP
+.B api
+Scan API endpoints for vulnerabilities.
+.TP
+.B file
+Scan files for malicious content.
+.SH EXAMPLES
+.TP
+List available payload categories:
+.B phantomfuzzer payload list
+.TP
+Generate SQL injection payloads:
+.B phantomfuzzer payload generate --category sql_injection --output payloads.txt
+.TP
+Scan a web application:
+.B phantomfuzzer scanner web --url https://example.com --depth 3
+.TP
+Fuzz an API endpoint:
+.B phantomfuzzer fuzzer api --target https://api.example.com/v1/users --method POST --data '{"user":"test"}'
+.SH FILES
+.TP
+.I /usr/local/bin/phantomfuzzer
+The wrapper script that forwards commands to the Docker container.
+.SH BUGS
+Report bugs to the GitHub repository: https://github.com/ghostsecurity/PhantomFuzzer
+.SH AUTHORS
+Ghost Security

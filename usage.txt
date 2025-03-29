@@ -1,0 +1,166 @@
+Scanning Operations
+Web Application Scanning
+
+PhantomFuzzer allows you to scan web applications for vulnerabilities:
+Basic Web Scanning
+
+phantomfuzzer scanner web --url https://example.com
+
+Scan with Authentication
+
+phantomfuzzer scanner web --url https://example.com --auth '{"username":"user","password":"pass"}'
+
+Control Scan Depth
+
+phantomfuzzer scanner web --url https://example.com --depth 2
+
+Save Results to a File
+
+phantomfuzzer scanner web --url https://example.com --output web_results.json --format json
+
+API Scanning
+
+Scan your APIs for potential vulnerabilities:
+
+phantomfuzzer scanner api --url https://api.example.com
+
+With OpenAPI/Swagger Specification
+
+phantomfuzzer scanner api --url https://api.example.com --spec openapi.json
+
+With Authentication
+
+phantomfuzzer scanner api --url https://api.example.com --auth '{"token":"your-api-token"}'
+
+Save Results to a File
+
+phantomfuzzer scanner api --url https://api.example.com --output api_results.json --format json
+
+File Scanning
+
+Scan files and directories for vulnerabilities:
+Scan a Single File
+
+phantomfuzzer scanner file --path ./target/file.php
+
+Recursive Directory Scan
+
+phantomfuzzer scanner file --path ./target --recursive
+
+Scan with File Pattern Matching
+
+phantomfuzzer scanner file --path ./target --recursive --pattern "*.php"
+
+Enable Machine Learning Enhanced Detection
+
+phantomfuzzer scanner file --path ./target --ml-enhanced
+
+Save Results to a File
+
+phantomfuzzer scanner file --path ./target --output file_results.json --format json
+
+Fuzzing Operations
+API Fuzzing
+
+PhantomFuzzer provides the ability to fuzz APIs by sending crafted requests. Here's how to perform API fuzzing:
+Basic API Fuzzing
+
+phantomfuzzer fuzzer api --target https://api.example.com/v1/users --method GET
+
+POST Request Fuzzing
+
+phantomfuzzer fuzzer api --target https://api.example.com/v1/users --method POST --data '{"username":"test"}'
+
+Fuzz with Custom Headers
+
+phantomfuzzer fuzzer api --target https://api.example.com/v1/users --headers '{"Authorization":"Bearer token"}'
+
+With Authentication
+
+phantomfuzzer fuzzer api --target https://api.example.com/v1/users --auth '{"username":"user","password":"pass"}'
+
+Control Fuzzing Intensity
+
+phantomfuzzer fuzzer api --target https://api.example.com/v1/users --iterations 200 --delay 0.2 --timeout 10
+
+Save Results to a File
+
+phantomfuzzer fuzzer api --target https://api.example.com/v1/users --output results.json --format json
+
+Protocol Fuzzing
+
+You can fuzz different protocols like TCP, SSH, and FTP. Below are examples:
+TCP Protocol Fuzzing
+
+phantomfuzzer fuzzer protocol --target example.com --port 80 --protocol tcp
+
+SSH Protocol Fuzzing
+
+phantomfuzzer fuzzer protocol --target example.com --port 22 --protocol ssh
+
+FTP Protocol Fuzzing
+
+phantomfuzzer fuzzer protocol --target example.com --port 21 --protocol ftp
+
+Control Protocol Fuzzing Intensity
+
+phantomfuzzer fuzzer protocol --target example.com --port 80 --protocol http --iterations 100 --delay 0.5 --timeout 15
+
+Input Fuzzing
+
+You can fuzz various types of inputs, including files, stdin, and command-line arguments.
+File Input Fuzzing
+
+phantomfuzzer fuzzer input --target ./target/application --input-type file
+
+Command-Line Argument Fuzzing
+
+phantomfuzzer fuzzer input --target ./target/application --input-type argument
+
+Save Results to a File
+
+phantomfuzzer fuzzer input --target ./target/application --input-type file --output input_results.json --output-format json
+
+Payload Generation
+
+PhantomFuzzer allows you to generate different types of attack payloads for various categories. Here's how you can use it:
+List Available Payload Categories
+
+phantomfuzzer payload list
+
+Generate Specific Payloads
+
+    SQL Injection (Basic)
+
+phantomfuzzer payload generate --category sql_injection --subcategory basic
+
+    Generate Multiple XSS Payloads
+
+phantomfuzzer payload generate --category xss --count 5 --output xss_payloads.txt
+
+    Generate Command Injection Payloads in JSON Format
+
+phantomfuzzer payload generate --category command_injection --format json
+
+Generate Random Payloads
+
+phantomfuzzer payload random --count 3
+
+Advanced Usage
+Combining Operations
+
+You can chain multiple operations for more comprehensive testing:
+
+# Generate payloads and use them for API fuzzing
+phantomfuzzer payload generate --category sql_injection --output sql_payloads.txt
+phantomfuzzer fuzzer api --target https://api.example.com/query --method POST --data @sql_payloads.txt
+
+# Scan and then fuzz discovered endpoints
+phantomfuzzer scanner api --url https://api.example.com --output discovered_apis.json
+phantomfuzzer fuzzer api --target https://api.example.com/query --method POST --data @discovered_apis.json
+
+Debug Mode
+
+Enable debug logging for more detailed output:
+
+phantomfuzzer --debug scanner web --url https://example.com

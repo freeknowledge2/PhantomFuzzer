@@ -1,0 +1,47 @@
+version: '3.8'
+
+services:
+  phantomfuzzer:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: phantomfuzzer:latest
+    container_name: phantomfuzzer
+    restart: unless-stopped
+    # Resource constraints to avoid overloading the host machine
+    deploy:
+      resources:
+        limits:
+          cpus: '2.0'    # Limit to 2 CPU cores
+          memory: 4G     # Limit to 4GB of RAM
+        reservations:
+          cpus: '0.5'    # Reserve at least 0.5 CPU cores
+          memory: 1G     # Reserve at least 1GB of RAM
+    volumes:
+      # Mount data directories for persistence
+      - ./data/wordlists:/data/wordlists
+      - ./data/payloads:/data/payloads
+      - ./data/training:/data/training
+      - ./data/vulnerabilities:/data/vulnerabilities
+      - ./data/patterns:/data/patterns
+      # Mount configuration files
+      - ./config:/app/config
+      # Mount logs directory
+      - ./logs:/app/logs
+    ports:
+      - "8080:8080"  # Web interface/API
+    environment:
+      - PYTHONPATH=/app
+      - LOG_LEVEL=INFO
+      - MAX_THREADS=10
+      - SCAN_TIMEOUT=300
+      - ML_MODEL_PATH=/data/training/models
+    # Health check to monitor container status
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    # Command can be overridden when running the container
+    command: ["--config", "/app/config/default.yml"]

@@ -1,0 +1,29 @@
+#!/bin/bash
+
+# PhantomFuzzer wrapper script
+# This script forwards commands to the phantomfuzzer Docker container
+
+# Suppress warnings
+export PYTHONWARNINGS="ignore::DeprecationWarning,ignore::PendingDeprecationWarning"
+export MPLCONFIGDIR="/tmp/matplotlib-config"
+
+# Create temp directory for matplotlib if it doesn't exist
+mkdir -p /tmp/matplotlib-config
+
+# Handle volume mounts for current directory when needed
+if [[ "$*" == *"--output"* ]] || [[ "$*" == *"--path"* ]] || [[ "$*" == *"--spec"* ]] || [[ "$*" == *"--target"* ]]; then
+    # Run with volume mounts
+    docker run --rm \
+        -v "$(pwd):/data/current" \
+        -v "$(pwd)/ascii.txt:/app/ascii.txt" \
+        -e PYTHONWARNINGS="ignore::DeprecationWarning,ignore::PendingDeprecationWarning" \
+        -e MPLCONFIGDIR="/tmp/matplotlib-config" \
+        phantomfuzzer "$@"
+else
+    # Run without volume mounts
+    docker run --rm \
+        -v "$(pwd)/ascii.txt:/app/ascii.txt" \
+        -e PYTHONWARNINGS="ignore::DeprecationWarning,ignore::PendingDeprecationWarning" \
+        -e MPLCONFIGDIR="/tmp/matplotlib-config" \
+        phantomfuzzer "$@"
+fi
