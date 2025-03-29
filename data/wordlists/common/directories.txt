@@ -1,0 +1,108 @@
+# Common directory names to check
+# Format: directory_name:weight (1-10, higher = more likely)
+
+# Admin and management
+admin:9
+administrator:8
+manager:7
+management:7
+dashboard:7
+console:6
+control:6
+panel:6
+
+# Common web directories
+api:9
+docs:8
+static:8
+media:7
+uploads:7
+images:7
+css:6
+js:6
+assets:6
+public:6
+private:8
+backup:9
+temp:7
+cache:7
+
+# Development
+dev:8
+development:7
+staging:7
+test:7
+testing:6
+beta:6
+debug:7
+
+# Security related
+.git:10
+.svn:8
+.env:10
+.config:9
+.settings:8
+.vscode:7
+.idea:7
+
+# Logs and data
+logs:8
+log:8
+data:7
+db:8
+database:8
+sql:7
+mysql:7
+postgres:7
+mongodb:7
+
+# Configuration
+conf:9
+config:9
+settings:8
+setup:7
+install:7
+
+# Common CMS directories
+wp-admin:8
+wp-content:7
+wp-includes:7
+administrator:8
+joomla:7
+drupal:7
+magento:7
+wordpress:7
+
+# Application specific
+app:8
+application:7
+src:7
+source:7
+includes:6
+modules:6
+components:6
+plugins:6
+extensions:6
+themes:6
+templates:6
+
+# User related
+user:7
+users:7
+accounts:7
+profile:6
+members:6
+login:8
+register:7
+signup:7
+auth:8
+
+# System
+cgi-bin:8
+bin:7
+etc:8
+proc:8
+sys:8
+system:7
+tmp:8
+var:7

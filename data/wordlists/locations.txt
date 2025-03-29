@@ -1,0 +1,119 @@
+# Common NGINX locations to check
+# Format: location:weight (1-10, higher = more likely)
+
+# Status and metrics
+/nginx_status:9
+/status:8
+/metrics:8
+/stub_status:9
+/server-status:8
+/server-info:7
+/stats:7
+/health:7
+/ping:6
+
+# Proxy and upstream
+/proxy:8
+/backend:8
+/upstream:8
+/balancer:7
+/lb_status:7
+/proxy_status:8
+
+# Admin and control
+/nginx-admin:9
+/nginx-manager:8
+/nginx-control:8
+/nginx-console:7
+/nginx-panel:7
+/nginx-dashboard:7
+
+# Configuration
+/nginx.conf:10
+/conf:9
+/config:9
+/nginx.config:9
+/nginx.cfg:8
+/settings:8
+/nginx-settings:8
+
+# SSL/TLS
+/ssl:8
+/certificates:8
+/certs:8
+/.well-known:7
+/acme-challenge:7
+
+# Logs
+/logs:9
+/log:9
+/access.log:9
+/error.log:9
+/debug.log:8
+/nginx-logs:8
+/nginx-access:8
+/nginx-error:8
+
+# Cache
+/cache:8
+/fastcgi_cache:8
+/proxy_cache:8
+/temp:7
+/tmp:7
+
+# Development
+/dev:7
+/development:7
+/staging:7
+/test:7
+/testing:6
+/debug:7
+
+# Security
+/.git:10
+/.svn:8
+/.env:10
+/.config:9
+/security:8
+/auth:8
+/login:8
+
+# API and docs
+/api:9
+/docs:8
+/swagger:7
+/openapi:7
+/redoc:7
+/documentation:7
+
+# Common web paths
+/static:7
+/media:7
+/uploads:8
+/files:8
+/download:7
+/public:7
+/private:8
+
+# Application specific
+/app:7
+/web:7
+/www:7
+/html:7
+/public_html:7
+/webroot:7
+
+# PHP specific
+/php:8
+/php-status:8
+/php-fpm:8
+/php-info:8
+/phpinfo:8
+/php.ini:9
+
+# Server info
+/server:7
+/info:7
+/phpinfo.php:9
+/test.php:8
+/info.php:8

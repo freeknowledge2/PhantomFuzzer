@@ -1,0 +1,108 @@
+# Private wordlist for additional patterns
+# Add your custom patterns here, one per line
+
+# Nginx specific
+nginx-manager
+nginx-status
+nginx-admin
+nginx.sock
+nginx.pid.oldbin
+nginx.conf.compiled
+nginx.conf.default.orig
+nginx_signing.key
+nginx.htpasswd
+nginx.htaccess
+nginx.users
+nginx.acl
+nginx.rules
+nginx.whitelist
+nginx.blacklist
+
+# Development and staging
+dev.conf
+staging.conf
+test.conf
+uat.conf
+prod.conf
+local.conf
+debug.conf
+maintenance.conf
+
+# SSL/TLS
+ssl.conf
+ssl.key
+ssl.crt
+ssl.pem
+ssl.csr
+ssl.ca
+ssl.bundle
+ssl.combined
+ssl.chain
+ssl.dhparam
+
+# Security
+security.conf
+firewall.conf
+rate-limit.conf
+blacklist.conf
+whitelist.conf
+acl.conf
+auth.conf
+basic-auth.conf
+ldap.conf
+oauth.conf
+
+# Optimization
+cache.conf
+compression.conf
+gzip.conf
+headers.conf
+expires.conf
+proxy-cache.conf
+fastcgi-cache.conf
+microcache.conf
+pagespeed.conf
+
+# Custom locations
+custom-locations.conf
+rewrites.conf
+redirects.conf
+maps.conf
+geo.conf
+upstream.conf
+
+# Monitoring
+status.conf
+metrics.conf
+prometheus.conf
+grafana.conf
+kibana.conf
+elastic.conf
+logging.conf
+
+# Application specific
+php-fpm.conf
+php.conf
+python.conf
+ruby.conf
+node.conf
+java.conf
+tomcat.conf
+wordpress.conf
+drupal.conf
+laravel.conf
+django.conf
+
+# Temporary and backup
+.nginx.swp
+.nginx.swo
+.nginx.swn
+.nginx.swm
+.nginx.swl
+.nginx.bk
+.nginx.old
+.nginx.orig
+.nginx.save
+.nginx.backup
+.nginx.copy
+.nginx.tmp

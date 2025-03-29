@@ -1,0 +1,5391 @@
+{
+  "daaf2fceca49ed034eace91c4e875653": {
+    "pattern": "nginx.conf",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.005006",
+    "updated_at": "2025-03-21T23:04:01.005006",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "e1188fc64dec2f70aa17b6bfdb1b8f11": {
+    "pattern": ".nginx",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.005445",
+    "updated_at": "2025-03-21T23:04:01.005445",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "5694e020d3c40837434f7ee602806df3": {
+    "pattern": "nginx_status",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.005628",
+    "updated_at": "2025-03-21T23:04:01.005628",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "3032516dd1adbe5ae5ba4bbbbf56adf5": {
+    "pattern": "nginx.pid",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.012866",
+    "updated_at": "2025-03-21T23:04:01.012866",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "22db84b867029dac7fe37db6b9e1efbe": {
+    "pattern": "nginx.access",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.013041",
+    "updated_at": "2025-03-21T23:04:01.013041",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "479e3f17428db6fb8fd056286fa803aa": {
+    "pattern": "nginx.error",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.013220",
+    "updated_at": "2025-03-21T23:04:01.013220",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "d23ca745bcc6f27736121275b930b760": {
+    "pattern": "nginx.log",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.013374",
+    "updated_at": "2025-03-21T23:04:01.013374",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "2c98d675a6cdc389ac2511a54f7ef790": {
+    "pattern": "nginx.cache",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.013519",
+    "updated_at": "2025-03-21T23:04:01.013519",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "58ff9a10aec14b6ebd3cd6875ffb8634": {
+    "pattern": "proxy.conf",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.013666",
+    "updated_at": "2025-03-21T23:04:01.013666",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "1fdffd3ff8bedad9c79718f557eaf2af": {
+    "pattern": "vhost.conf",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.013818",
+    "updated_at": "2025-03-21T23:04:01.013818",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "a9056178870156faf461d51415cc0599": {
+    "pattern": "sites-enabled",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.013976",
+    "updated_at": "2025-03-21T23:04:01.013976",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "8eb0f2ea1a8fe716811856e13c9fe9fe": {
+    "pattern": "sites-available",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.014147",
+    "updated_at": "2025-03-21T23:04:01.014147",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "f4d9364af14e2b9d5e9f0c113ee87588": {
+    "pattern": "conf.d",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.014324",
+    "updated_at": "2025-03-21T23:04:01.014324",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "01ce8181eb91f26768e8490d9e2c15ed": {
+    "pattern": "fastcgi.conf",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.014507",
+    "updated_at": "2025-03-21T23:04:01.014507",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "7664f3b435e959b879e8fd2ca0d0d92e": {
+    "pattern": "fastcgi_params",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.014697",
+    "updated_at": "2025-03-21T23:04:01.014697",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "59609c22bcbc191a0552672d83764503": {
+    "pattern": "mime.types",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.014886",
+    "updated_at": "2025-03-21T23:04:01.014886",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "706114fc0610b7a4b9ae943e728813c5": {
+    "pattern": "nginx_temp",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.015076",
+    "updated_at": "2025-03-21T23:04:01.015076",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "db0d6abfe253da4132cc4f975d674fa9": {
+    "pattern": "nginx.bak",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.015289",
+    "updated_at": "2025-03-21T23:04:01.015289",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "a1062a13406fa4d53f074983ffc379f6": {
+    "pattern": "nginx.old",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.015493",
+    "updated_at": "2025-03-21T23:04:01.015493",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "62919c193fd14dea8303c21a8d5509c7": {
+    "pattern": "nginx.debug",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.015708",
+    "updated_at": "2025-03-21T23:04:01.015708",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "c9d78dd307f78c7b5d621d6085cee472": {
+    "pattern": "nginx.test",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.015930",
+    "updated_at": "2025-03-21T23:04:01.015930",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "808a9fa44fba6fbdb696192f243d0f56": {
+    "pattern": "nginx.local",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.016158",
+    "updated_at": "2025-03-21T23:04:01.016158",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "d0968be3b81c4237ba27eceb08dae0f2": {
+    "pattern": "nginx.dev",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.016405",
+    "updated_at": "2025-03-21T23:04:01.016405",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "9cd4b62c15d648c8c284de04dc395203": {
+    "pattern": "nginx.prod",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.016651",
+    "updated_at": "2025-03-21T23:04:01.016651",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "9b76a0c9f1f340fef80a870a65728724": {
+    "pattern": "nginx.staging",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.016907",
+    "updated_at": "2025-03-21T23:04:01.016907",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "8e4b83bd49e9e8317d1f7f2299e2b4be": {
+    "pattern": "nginx.backup",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.017168",
+    "updated_at": "2025-03-21T23:04:01.017168",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "f49cf7ced36ca497e8702503a57e3bb6": {
+    "pattern": "nginx.master",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.017444",
+    "updated_at": "2025-03-21T23:04:01.017444",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "9c2e17a0b9d09813e2d61389e0c15107": {
+    "pattern": "nginx.worker",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.017718",
+    "updated_at": "2025-03-21T23:04:01.017718",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "60657ac113b7b5a0ebaab6546baccda5": {
+    "pattern": "nginx.default",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.017998",
+    "updated_at": "2025-03-21T23:04:01.017998",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "d8b7bf25b4abb4e09af30c067694417f": {
+    "pattern": "nginx.template",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.018516",
+    "updated_at": "2025-03-21T23:04:01.018516",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "e3910c61b19661fd2d34f3a5c5fa5506": {
+    "pattern": "nginx.original",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.018884",
+    "updated_at": "2025-03-21T23:04:01.018884",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "787db8b855e4e7782226f390d8eac17a": {
+    "pattern": "nginx.save",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.019213",
+    "updated_at": "2025-03-21T23:04:01.019213",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "6611e24736b8133f8937ee7615307d5d": {
+    "pattern": "nginx.copy",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.019534",
+    "updated_at": "2025-03-21T23:04:01.019534",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "4f954bfd6fa191756bc2c13aaba012da": {
+    "pattern": "nginx.conf~",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.019842",
+    "updated_at": "2025-03-21T23:04:01.019842",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "36d781963355fb243d1dc009752ca15c": {
+    "pattern": "nginx.conf.bak",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.020160",
+    "updated_at": "2025-03-21T23:04:01.020160",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "c57fbd94382eab7d6aef4ba58304b705": {
+    "pattern": "nginx.conf.old",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.020489",
+    "updated_at": "2025-03-21T23:04:01.020489",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "baa48028e25cdf9a8c2bac671a624467": {
+    "pattern": "nginx.conf.orig",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.020825",
+    "updated_at": "2025-03-21T23:04:01.020825",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "4cd6f7dd32277702981fbe9b9e2cece5": {
+    "pattern": "nginx.conf.rpmsave",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.021160",
+    "updated_at": "2025-03-21T23:04:01.021160",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "b6dda588824ab796882396888190458d": {
+    "pattern": "nginx.conf.rpmnew",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.021501",
+    "updated_at": "2025-03-21T23:04:01.021501",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "8ef1459a51738219b3dd1c9bc12140ab": {
+    "pattern": "nginx.conf.swp",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.021840",
+    "updated_at": "2025-03-21T23:04:01.021840",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "50829fadba5c6f9e446dea1b467d4452": {
+    "pattern": "nginx.conf.default",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.022178",
+    "updated_at": "2025-03-21T23:04:01.022178",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "63731555ac20c173d64ffaa1626d1fec": {
+    "pattern": "nginx.conf.template",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.022541",
+    "updated_at": "2025-03-21T23:04:01.022541",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "25ad3490dcf1ce00f6aa9900b254ca91": {
+    "pattern": "nginx.conf.sample",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.022893",
+    "updated_at": "2025-03-21T23:04:01.022893",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "015669b8a1110c863619839f5ce1fb5d": {
+    "pattern": "nginx.conf.example",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.023248",
+    "updated_at": "2025-03-21T23:04:01.023248",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "d50228a86401eb255ab13e44d8d18ba6": {
+    "pattern": "nginx.conf.local",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.023610",
+    "updated_at": "2025-03-21T23:04:01.023610",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "a16b78f9f2f367272251c647c941c888": {
+    "pattern": "nginx.conf.dev",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.023980",
+    "updated_at": "2025-03-21T23:04:01.023980",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "9098664e193179700b80ac5f4c321468": {
+    "pattern": "nginx.conf.prod",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.024367",
+    "updated_at": "2025-03-21T23:04:01.024367",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "77a35482c014b937308504386736eb79": {
+    "pattern": "nginx.conf.staging",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.024760",
+    "updated_at": "2025-03-21T23:04:01.024760",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "8567c68598d10a5bdab893113533673e": {
+    "pattern": "nginx.conf.backup",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.025159",
+    "updated_at": "2025-03-21T23:04:01.025159",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "0a01fb88f42d12ee056fa6b1849a9642": {
+    "pattern": "nginx.conf.master",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.025574",
+    "updated_at": "2025-03-21T23:04:01.025574",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "e1a98e2efd49c56966105a504743df00": {
+    "pattern": "nginx.conf.worker",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.025990",
+    "updated_at": "2025-03-21T23:04:01.025990",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "7bd1e6c1c829b44a7bbd43b08945028f": {
+    "pattern": "nginx.conf.debug",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.026401",
+    "updated_at": "2025-03-21T23:04:01.026401",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "78bf161683c5ede962636e0f8f634edf": {
+    "pattern": "nginx.conf.test",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.026810",
+    "updated_at": "2025-03-21T23:04:01.026810",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "6b9d9f966eddaefa88eba64de00147cd": {
+    "pattern": "nginx.conf.save",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.027236",
+    "updated_at": "2025-03-21T23:04:01.027236",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "674bdf3acd2181ee2b517c386e6b9c95": {
+    "pattern": "nginx.conf.copy",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.027669",
+    "updated_at": "2025-03-21T23:04:01.027669",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "aaa54776602874b0bf926b2bd0695497": {
+    "pattern": "nginx/conf",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.028115",
+    "updated_at": "2025-03-21T23:04:01.028115",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "f42aa0cf599a28717ec0924559a492d6": {
+    "pattern": "nginx/logs",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.028555",
+    "updated_at": "2025-03-21T23:04:01.028555",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "3600858a66b6b0cbad50b78bf582a473": {
+    "pattern": "nginx/temp",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.029010",
+    "updated_at": "2025-03-21T23:04:01.029010",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "82c0537bff9dfb155fbd798d215e1668": {
+    "pattern": "nginx/cache",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.029464",
+    "updated_at": "2025-03-21T23:04:01.029464",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "96a9d42d01d2fb741a8649d0ecde7b0b": {
+    "pattern": "nginx/run",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.029925",
+    "updated_at": "2025-03-21T23:04:01.029925",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "a5400778b776031c8f928c2c3eb618ba": {
+    "pattern": "nginx/html",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.030390",
+    "updated_at": "2025-03-21T23:04:01.030390",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "15d443015b7984b581b9ba84a262592e": {
+    "pattern": "nginx/www",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.030875",
+    "updated_at": "2025-03-21T23:04:01.030875",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "26160577f15611701a94ceaef4cf5612": {
+    "pattern": "nginx/backup",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.031373",
+    "updated_at": "2025-03-21T23:04:01.031373",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "d8dee00888441731f2c4858cbac71449": {
+    "pattern": "nginx/sites",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.031858",
+    "updated_at": "2025-03-21T23:04:01.031858",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "a0b98a699fa9c11e87fb5fbc1830afad": {
+    "pattern": "nginx/vhosts",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.032370",
+    "updated_at": "2025-03-21T23:04:01.032370",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "215b0c1019de8363ac8b2009c4943be4": {
+    "pattern": "nginx/ssl",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.032875",
+    "updated_at": "2025-03-21T23:04:01.032875",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "b3e857ddfd9f97dcc235479dc4114d32": {
+    "pattern": "nginx/certs",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.033391",
+    "updated_at": "2025-03-21T23:04:01.033391",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "49ae8df7ffba240daf19c9bd9476cd73": {
+    "pattern": "nginx/modules",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.033896",
+    "updated_at": "2025-03-21T23:04:01.033896",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "5e809dc7a4f7258efb68614f6fc0d194": {
+    "pattern": "nginx/scripts",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.034416",
+    "updated_at": "2025-03-21T23:04:01.034416",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "d63a27ec740c6e6c71c37ae6c6be12a0": {
+    "pattern": "nginx/proxy",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.034939",
+    "updated_at": "2025-03-21T23:04:01.034939",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "21232f297a57a5a743894a0e4a801fc3": {
+    "pattern": "admin",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.035475",
+    "updated_at": "2025-03-21T23:04:01.035475",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "200ceb26807d6bf99fd6f4f0d1ca54d4": {
+    "pattern": "administrator",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.036028",
+    "updated_at": "2025-03-21T23:04:01.036028",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "31b5d7b1a473763500b9b0d66e1a63c2": {
+    "pattern": "admincp",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.036593",
+    "updated_at": "2025-03-21T23:04:01.036593",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "2aefc34200a294a3cc7db81b43a81873": {
+    "pattern": "admins",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.037143",
+    "updated_at": "2025-03-21T23:04:01.037143",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "91f5167c34c400758115c2a6826ec2e3": {
+    "pattern": "administrador",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.037700",
+    "updated_at": "2025-03-21T23:04:01.037700",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "b09c600fddc573f117449b3723f23d64": {
+    "pattern": "adm",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.038252",
+    "updated_at": "2025-03-21T23:04:01.038252",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "b43fdd98b1fd705ae4c3a10cf25aad8a": {
+    "pattern": "backend",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.038805",
+    "updated_at": "2025-03-21T23:04:01.038805",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "61ccb696986954abbe14bce266a373a7": {
+    "pattern": "backoffice",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.039360",
+    "updated_at": "2025-03-21T23:04:01.039360",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "fc5364bf9dbfa34954526becad136d4b": {
+    "pattern": "control",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.039976",
+    "updated_at": "2025-03-21T23:04:01.039976",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "d0a20b32ef9a9081a1cf0796e54fbc05": {
+    "pattern": "cpanel",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.040575",
+    "updated_at": "2025-03-21T23:04:01.040575",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "70682896e24287b0476eff2a14c148f0": {
+    "pattern": "manage",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.041169",
+    "updated_at": "2025-03-21T23:04:01.041169",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "d10af457daa1deed54e2c36b5f295e7e": {
+    "pattern": "management",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.041765",
+    "updated_at": "2025-03-21T23:04:01.041765",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "1d0258c2440a8d19e716292b231e3190": {
+    "pattern": "manager",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.042363",
+    "updated_at": "2025-03-21T23:04:01.042363",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "7ee9c4f86007ba41bc79bbfab1cd8a68": {
+    "pattern": "portal",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.042959",
+    "updated_at": "2025-03-21T23:04:01.042959",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "add6bb58e139be103324d04d82d8f545": {
+    "pattern": "webadmin",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.043621",
+    "updated_at": "2025-03-21T23:04:01.043621",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "48a365b4ce1e322a55ae9017f3daf0c0": {
+    "pattern": "sysadmin",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.044262",
+    "updated_at": "2025-03-21T23:04:01.044262",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "37e50c2505564ed6b57694328917a209": {
+    "pattern": "admin-console",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.044891",
+    "updated_at": "2025-03-21T23:04:01.044891",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "bd0f8b1d5e1d62756aff4fea7541d569": {
+    "pattern": "admin-panel",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.045520",
+    "updated_at": "2025-03-21T23:04:01.045520",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "f9ef6d579f3c53e556345204938f97c8": {
+    "pattern": "admin-area",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.046150",
+    "updated_at": "2025-03-21T23:04:01.046150",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "31b80c99f1d265b3f83441bdff2abf85": {
+    "pattern": "admin-login",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.046772",
+    "updated_at": "2025-03-21T23:04:01.046772",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "9132eb31f2e740e5c7934cb2131ed283": {
+    "pattern": "admin-interface",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.047645",
+    "updated_at": "2025-03-21T23:04:01.047645",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "74d02c943531b76175a988197a044e67": {
+    "pattern": "admin-dashboard",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.048311",
+    "updated_at": "2025-03-21T23:04:01.048311",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "5b5533b8242bc553bdf1a92bfbc8bb6a": {
+    "pattern": "admin-center",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.048962",
+    "updated_at": "2025-03-21T23:04:01.048962",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "3187bcac52d6ab5a8653a2ddb7419c32": {
+    "pattern": "admin-cp",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.049624",
+    "updated_at": "2025-03-21T23:04:01.049624",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "ab18d8554c4b6a246c8a10898100e7b6": {
+    "pattern": "admin_area",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.050283",
+    "updated_at": "2025-03-21T23:04:01.050283",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "a3107e4d4ae0ea783cd1177c52f1e630": {
+    "pattern": "admin_login",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.050951",
+    "updated_at": "2025-03-21T23:04:01.050951",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "2f0ba6d813148c5295d6fded1beb2add": {
+    "pattern": "admin_console",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.051634",
+    "updated_at": "2025-03-21T23:04:01.051634",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "ee48bd927e905118b7e0c4432916fe99": {
+    "pattern": "admin_panel",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.052318",
+    "updated_at": "2025-03-21T23:04:01.052318",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "9f38bcf8573831c44f7657a571a99e38": {
+    "pattern": "adminarea",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.053008",
+    "updated_at": "2025-03-21T23:04:01.053008",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "8f96e4f5fcff936298f13a4b8db8a242": {
+    "pattern": "adminlogin",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.053705",
+    "updated_at": "2025-03-21T23:04:01.053705",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "a787439cd64bc8e2a56eefdc6969e27f": {
+    "pattern": "adminconsole",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.054403",
+    "updated_at": "2025-03-21T23:04:01.054403",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "87cdd38beeeb3a16337bef333e1c8d63": {
+    "pattern": "adminpanel",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.055104",
+    "updated_at": "2025-03-21T23:04:01.055104",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "e52e7ce4ac2458867d05eaad577560db": {
+    "pattern": "administration",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.055805",
+    "updated_at": "2025-03-21T23:04:01.055805",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "09707f5ba4ef21bcd3baa99ed5c10d12": {
+    "pattern": "administrative",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.056518",
+    "updated_at": "2025-03-21T23:04:01.056518",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "10331e1b53add59f0d2a9e4d14c7f6f3": {
+    "pattern": "administrator-login",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.057303",
+    "updated_at": "2025-03-21T23:04:01.057303",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "4ed00056b42c093195b55912b3dcc516": {
+    "pattern": "administrator-panel",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.058039",
+    "updated_at": "2025-03-21T23:04:01.058039",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "72bf5f2282078165c580722239fa9f7e": {
+    "pattern": "administrator-console",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.058955",
+    "updated_at": "2025-03-21T23:04:01.058955",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "dfa13bf385cdffe5fbee7fcaa18ad926": {
+    "pattern": "administrator-area",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.059817",
+    "updated_at": "2025-03-21T23:04:01.059817",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "0539b2707b69dd3425a68209fa2bc417": {
+    "pattern": "administrador-login",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.060648",
+    "updated_at": "2025-03-21T23:04:01.060648",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "5063749fb22fe2d4449842719d611d7f": {
+    "pattern": "administrador-panel",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.061492",
+    "updated_at": "2025-03-21T23:04:01.061492",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "b240f820603866b54d1ea8b90254a228": {
+    "pattern": "administrador-console",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.062318",
+    "updated_at": "2025-03-21T23:04:01.062318",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "828e0013b8f3bc1bb22b4f57172b019d": {
+    "pattern": "index.php",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.063161",
+    "updated_at": "2025-03-21T23:04:01.063161",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "eacf331f0ffc35d4b482f1d15a887d3b": {
+    "pattern": "index.html",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.064016",
+    "updated_at": "2025-03-21T23:04:01.064016",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "fd491768bbe8b2f208d6e5d82758228a": {
+    "pattern": "index.htm",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.064842",
+    "updated_at": "2025-03-21T23:04:01.064842",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "ca443fe3282afeba0fff0555455dfe33": {
+    "pattern": "index.asp",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.065785",
+    "updated_at": "2025-03-21T23:04:01.065785",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "c21fea23290381875aec3ed34a22dd94": {
+    "pattern": "index.aspx",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.066683",
+    "updated_at": "2025-03-21T23:04:01.066683",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "0e3cb752f51f9217882641c5c8a8761d": {
+    "pattern": "index.jsp",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.067555",
+    "updated_at": "2025-03-21T23:04:01.067555",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "b8d28d5b08ca21976f1d599dcb9c85d0": {
+    "pattern": "index.do",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.068661",
+    "updated_at": "2025-03-21T23:04:01.068661",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "b67b1c5d009b5cd448b5ef97d894ddac": {
+    "pattern": "index.action",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.069582",
+    "updated_at": "2025-03-21T23:04:01.069582",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "31d27f1bafc37da896fc70a6d7c4da27": {
+    "pattern": "index.cfm",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.070497",
+    "updated_at": "2025-03-21T23:04:01.070497",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "ae2011d4228e01c2ca87dab5b839be4b": {
+    "pattern": "index.rb",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.071379",
+    "updated_at": "2025-03-21T23:04:01.071379",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "b7fcdb5bed4007e578e686f017bf65e9": {
+    "pattern": "index.py",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.072274",
+    "updated_at": "2025-03-21T23:04:01.072274",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "8bbfe26229f01bb969e6e8e3fb47d26d": {
+    "pattern": "index.pl",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.073169",
+    "updated_at": "2025-03-21T23:04:01.073169",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "77a1633ff1307ef3eba1abe3cefcaef2": {
+    "pattern": "index.cgi",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.074091",
+    "updated_at": "2025-03-21T23:04:01.074091",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "78f058661380e7809b1c2e22a45c4ffe": {
+    "pattern": "index.shtml",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.075129",
+    "updated_at": "2025-03-21T23:04:01.075129",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "a8d918449a8c20f828988926aaef8d57": {
+    "pattern": "index.jspx",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.076086",
+    "updated_at": "2025-03-21T23:04:01.076086",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "b3e010471cfab9cba7898c33800a1b6b": {
+    "pattern": "default.php",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.077022",
+    "updated_at": "2025-03-21T23:04:01.077022",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "24390761b1374f92b0e726f2aaa588fb": {
+    "pattern": "default.html",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.077953",
+    "updated_at": "2025-03-21T23:04:01.077953",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "2cc37e731786ff9b44157cd9f026b9cb": {
+    "pattern": "default.htm",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.078899",
+    "updated_at": "2025-03-21T23:04:01.078899",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "a91bddc52f467c2c739adbf26cc50905": {
+    "pattern": "default.asp",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.079889",
+    "updated_at": "2025-03-21T23:04:01.079889",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "67f59a9e18fa697f05c1ac1becf436b2": {
+    "pattern": "home.php",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.080819",
+    "updated_at": "2025-03-21T23:04:01.080819",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "4725c0ce919c309d16e2ebd517e25956": {
+    "pattern": "home.html",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.081709",
+    "updated_at": "2025-03-21T23:04:01.081709",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "b60415bb486b3eb849523d114f98317f": {
+    "pattern": "home.htm",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.082633",
+    "updated_at": "2025-03-21T23:04:01.082633",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "abb7696866116ab53950b235b80b464f": {
+    "pattern": "home.asp",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.083561",
+    "updated_at": "2025-03-21T23:04:01.083561",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "08880e5e5524ba22775884d18053065c": {
+    "pattern": "home.aspx",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.084495",
+    "updated_at": "2025-03-21T23:04:01.084495",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "6817a966ca62bf66650390795a7e7189": {
+    "pattern": "main.php",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.085427",
+    "updated_at": "2025-03-21T23:04:01.085427",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "4d1f6d0095e22bb74e2b8a36ff770856": {
+    "pattern": "main.html",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.086852",
+    "updated_at": "2025-03-21T23:04:01.086852",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "83626407e9e29862e6739e6555756b4d": {
+    "pattern": "main.htm",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.087789",
+    "updated_at": "2025-03-21T23:04:01.087789",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "cc4dc409d58a6e518372eb56d03cefae": {
+    "pattern": "main.asp",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.088742",
+    "updated_at": "2025-03-21T23:04:01.088742",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "40daa6fb2c7b602fd15c4a2f8e666f68": {
+    "pattern": "main.aspx",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.089731",
+    "updated_at": "2025-03-21T23:04:01.089731",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "e77989ed21758e78331b20e477fc5582": {
+    "pattern": "dev",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.090750",
+    "updated_at": "2025-03-21T23:04:01.090750",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "759b74ce43947f5f4c91aeddc3e5bad3": {
+    "pattern": "development",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.091753",
+    "updated_at": "2025-03-21T23:04:01.091753",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "098f6bcd4621d373cade4e832627b4f6": {
+    "pattern": "test",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.092736",
+    "updated_at": "2025-03-21T23:04:01.092736",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "ae2b1fca515949e5d54fb22b8ed95575": {
+    "pattern": "testing",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.093722",
+    "updated_at": "2025-03-21T23:04:01.093722",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "830f78e090fe8aec00891405dfc14824": {
+    "pattern": "staging",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.094716",
+    "updated_at": "2025-03-21T23:04:01.094716",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "987bcab01b929eb2c07877b224215c92": {
+    "pattern": "beta",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.095701",
+    "updated_at": "2025-03-21T23:04:01.095701",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "ad42f6697b035b7580e4fef93be20b4d": {
+    "pattern": "debug",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.096699",
+    "updated_at": "2025-03-21T23:04:01.096699",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "fe01ce2a7fbac8fafaed7c982a04e229": {
+    "pattern": "demo",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.097688",
+    "updated_at": "2025-03-21T23:04:01.097688",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "1a79a4d60de6718e8e5b326e338ae533": {
+    "pattern": "example",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.098716",
+    "updated_at": "2025-03-21T23:04:01.098716",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "5e8ff9bf55ba3508199d22e984129be6": {
+    "pattern": "sample",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.099718",
+    "updated_at": "2025-03-21T23:04:01.099718",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "3d801aa532c1cec3ee82d87a99fdf63f": {
+    "pattern": "temp",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.100762",
+    "updated_at": "2025-03-21T23:04:01.100762",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "fa816edb83e95bf0c8da580bdfd491ef": {
+    "pattern": "tmp",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.101804",
+    "updated_at": "2025-03-21T23:04:01.101804",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "402051f4be0cc3aad33bcf3ac3d6532b": {
+    "pattern": "backup",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.102873",
+    "updated_at": "2025-03-21T23:04:01.102873",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "0a751581d5e1b56c29c213ee06c99419": {
+    "pattern": "bak",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.104044",
+    "updated_at": "2025-03-21T23:04:01.104044",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "9f827e4d673891a1e05fc41b76fe4925": {
+    "pattern": "dev-admin",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.105369",
+    "updated_at": "2025-03-21T23:04:01.105369",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "7e5512fcc26c01912e36228298fe2a08": {
+    "pattern": "dev-console",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.106627",
+    "updated_at": "2025-03-21T23:04:01.106627",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "ad5822ae71d4147f2450e8a659066015": {
+    "pattern": "dev-panel",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.107849",
+    "updated_at": "2025-03-21T23:04:01.107849",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "f273aa0600aa07964cdb38a6b105f708": {
+    "pattern": "dev-login",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.108989",
+    "updated_at": "2025-03-21T23:04:01.108989",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "0cc0b5bbe9a5d85c91b3d9bd02e4dae4": {
+    "pattern": "dev-api",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.110107",
+    "updated_at": "2025-03-21T23:04:01.110107",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "ee919014da8b887667d38ff3eb0019bd": {
+    "pattern": "test-admin",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.111200",
+    "updated_at": "2025-03-21T23:04:01.111200",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "8020c33089adc054d0aa60410cbf427a": {
+    "pattern": "test-console",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.112318",
+    "updated_at": "2025-03-21T23:04:01.112318",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "a91fe391e1b12b3f8be9fb3b67a88e48": {
+    "pattern": "test-panel",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.113483",
+    "updated_at": "2025-03-21T23:04:01.113483",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "bf54b1c4f8df323ee9206d456323b2ab": {
+    "pattern": "test-login",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.114579",
+    "updated_at": "2025-03-21T23:04:01.114579",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "a7b5351eb5ca297d0c6ec7a9b5020ef3": {
+    "pattern": "test-api",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.115679",
+    "updated_at": "2025-03-21T23:04:01.115679",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "591b15ec3e815e4c9bfb5d308e728aa6": {
+    "pattern": "staging-admin",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.116766",
+    "updated_at": "2025-03-21T23:04:01.116766",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "21235ee0c562d4386d59c7dcd371a61b": {
+    "pattern": "staging-console",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.117887",
+    "updated_at": "2025-03-21T23:04:01.117887",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "0578f020021ef32a5f701f986b4090e5": {
+    "pattern": "staging-panel",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.119022",
+    "updated_at": "2025-03-21T23:04:01.119022",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "811e21498cdab1156b5311d27da9e3d4": {
+    "pattern": "staging-login",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.120153",
+    "updated_at": "2025-03-21T23:04:01.120153",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "1a4969b18c8f7ae2a5dfb83adbb5a0e6": {
+    "pattern": "beta-admin",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.121305",
+    "updated_at": "2025-03-21T23:04:01.121305",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "dfd4a9929fd631d5f47a851bf472daff": {
+    "pattern": "beta-console",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.122462",
+    "updated_at": "2025-03-21T23:04:01.122462",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "1de0695f6710c90a74637636c7006047": {
+    "pattern": "beta-panel",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.123627",
+    "updated_at": "2025-03-21T23:04:01.123627",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "00a0a0d6b899d54e44c72baf540bda50": {
+    "pattern": "beta-login",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.124804",
+    "updated_at": "2025-03-21T23:04:01.124804",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "382b04f8d37618e2a396915b7b09bd20": {
+    "pattern": "beta-api",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.125953",
+    "updated_at": "2025-03-21T23:04:01.125953",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "2ffbf48d97f07cfd6d3d07aa0ab5f960": {
+    "pattern": "debug-console",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.127136",
+    "updated_at": "2025-03-21T23:04:01.127136",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "459f761934564fc893fb713c1dc5d598": {
+    "pattern": "debug-panel",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.128326",
+    "updated_at": "2025-03-21T23:04:01.128326",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "06deba3e10f2087c1520a16636512e50": {
+    "pattern": "debug-log",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.129493",
+    "updated_at": "2025-03-21T23:04:01.129493",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "87529d37170265b6f7d6fa81f2e83158": {
+    "pattern": "debug-info",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.130652",
+    "updated_at": "2025-03-21T23:04:01.130652",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "41d0510a9067999b72f38ba0ce9f6195": {
+    "pattern": "demo-admin",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.131835",
+    "updated_at": "2025-03-21T23:04:01.131835",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "7895d6d59ea118d816deb5b259a82c37": {
+    "pattern": "demo-console",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.133006",
+    "updated_at": "2025-03-21T23:04:01.133006",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "b86645bf4846e4a4551687fcaaf1cc7f": {
+    "pattern": "demo-panel",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.134213",
+    "updated_at": "2025-03-21T23:04:01.134213",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "cc76f517c0233a9b8ecad052c5a58c2d": {
+    "pattern": "demo-login",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.135413",
+    "updated_at": "2025-03-21T23:04:01.135413",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "948641ad73372ffcd3f7ced74c3970d4": {
+    "pattern": "demo-api",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.136600",
+    "updated_at": "2025-03-21T23:04:01.136600",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "dc1d71bbb5c4d2a5e936db79ef10c19f": {
+    "pattern": "log",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.137816",
+    "updated_at": "2025-03-21T23:04:01.137816",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "2165e4fa5bddb65a31f6a0c495c2fa37": {
+    "pattern": "logs",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.139042",
+    "updated_at": "2025-03-21T23:04:01.139042",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "3568e0aea9caea883ea870cc8776a786": {
+    "pattern": "error_log",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.140262",
+    "updated_at": "2025-03-21T23:04:01.140262",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "48b9398474c10d80a62285ad755dd9b5": {
+    "pattern": "error.log",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.141703",
+    "updated_at": "2025-03-21T23:04:01.141703",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "47f52dedc48034d27b096c159a6dc021": {
+    "pattern": "access_log",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.143106",
+    "updated_at": "2025-03-21T23:04:01.143106",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "c6e512aa6932384b6b22cc05dc6e98b1": {
+    "pattern": "access.log",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.144582",
+    "updated_at": "2025-03-21T23:04:01.144582",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "7db4e7e3a0cf7313f70633396315fd42": {
+    "pattern": "debug_log",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.145955",
+    "updated_at": "2025-03-21T23:04:01.145955",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "646cb1cb7f8e32a7db4a1c8c10c42b33": {
+    "pattern": "debug.log",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.147281",
+    "updated_at": "2025-03-21T23:04:01.147281",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "117275758d7350380271619094e06d94": {
+    "pattern": "app.log",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.148620",
+    "updated_at": "2025-03-21T23:04:01.148620",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "d15329b5ea6ccfcffe3f34eb3e64db18": {
+    "pattern": "application.log",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.149909",
+    "updated_at": "2025-03-21T23:04:01.149909",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "4a84c7c23d3b4271f4424ceb2ef51b25": {
+    "pattern": "web.log",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.151175",
+    "updated_at": "2025-03-21T23:04:01.151175",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "60863524962e4077d558766bf2f79235": {
+    "pattern": "server.log",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.152487",
+    "updated_at": "2025-03-21T23:04:01.152487",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "6d0a4578b6f534cb4aae4c8b9828a74d": {
+    "pattern": "event.log",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.153781",
+    "updated_at": "2025-03-21T23:04:01.153781",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "05205f3edacb33d2fc083cf1bd6b15e5": {
+    "pattern": "system.log",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.155092",
+    "updated_at": "2025-03-21T23:04:01.155092",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "c85d04a5720ddd2bf693462067ce1d6c": {
+    "pattern": "security.log",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.156399",
+    "updated_at": "2025-03-21T23:04:01.156399",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "0915371c7a133d7fe9cf20a8d5e986dd": {
+    "pattern": "admin.log",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.157674",
+    "updated_at": "2025-03-21T23:04:01.157674",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "d6412c0e017e7b59eca03656e6d235fb": {
+    "pattern": "php_error.log",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.158970",
+    "updated_at": "2025-03-21T23:04:01.158970",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "f40f0f5f6309b69f08290c8ecee9a6c3": {
+    "pattern": "php-error.log",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.160299",
+    "updated_at": "2025-03-21T23:04:01.160299",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "9a24d71582dac041ad06b42cac69a96d": {
+    "pattern": "php_errors.log",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.161631",
+    "updated_at": "2025-03-21T23:04:01.161631",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "42ed117865a173ce3968e6410683ab70": {
+    "pattern": "php-errors.log",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.162974",
+    "updated_at": "2025-03-21T23:04:01.162974",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "cf6418491a2d59a3498cf3c9722e1191": {
+    "pattern": "error-log",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.164310",
+    "updated_at": "2025-03-21T23:04:01.164310",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "1ca0248343f51a55ebf1fd09f904af29": {
+    "pattern": "error_logs",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.165644",
+    "updated_at": "2025-03-21T23:04:01.165644",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "76bd157b95b05e538fa52ed334ad1e6b": {
+    "pattern": "error-logs",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.166981",
+    "updated_at": "2025-03-21T23:04:01.166981",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "801fe8ada3b81fb166351bb3270a7eec": {
+    "pattern": "errorlog",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.168317",
+    "updated_at": "2025-03-21T23:04:01.168317",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "e4666e90ed5583824fab10126edf1e41": {
+    "pattern": "error.logs",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.169722",
+    "updated_at": "2025-03-21T23:04:01.169722",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "bdf154ef6b9b4988f5c86c95bcb6ecf9": {
+    "pattern": "log/error",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.171100",
+    "updated_at": "2025-03-21T23:04:01.171100",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "ee917c1006d651a0a930699546c7cec4": {
+    "pattern": "log/access",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.172640",
+    "updated_at": "2025-03-21T23:04:01.172640",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "ded1dac38709db24ad21928a6593f325": {
+    "pattern": "log/debug",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.174101",
+    "updated_at": "2025-03-21T23:04:01.174101",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "c2da4a4ad682abe85e6559a915532a46": {
+    "pattern": "log/app",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.175691",
+    "updated_at": "2025-03-21T23:04:01.175691",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "f8a7a655398d6820a5884ed1c4708a27": {
+    "pattern": "log/web",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.177262",
+    "updated_at": "2025-03-21T23:04:01.177262",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "ec4df315300bfe1fb65bdbd46cadd290": {
+    "pattern": "logs/error",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.178741",
+    "updated_at": "2025-03-21T23:04:01.178741",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "b76d8b45a2a14e47b933edd9d69cf5f0": {
+    "pattern": "logs/access",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.180213",
+    "updated_at": "2025-03-21T23:04:01.180213",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "b4d9bfffc256729a7cb1bfd77867eb10": {
+    "pattern": "logs/debug",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.181635",
+    "updated_at": "2025-03-21T23:04:01.181635",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "9aebe010fb94d68a6767f9878627a872": {
+    "pattern": "logs/app",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.183040",
+    "updated_at": "2025-03-21T23:04:01.183040",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "e72f6e5a18d0f4135419e0f04ca5fc84": {
+    "pattern": "logs/web",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.184521",
+    "updated_at": "2025-03-21T23:04:01.184521",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "1e5ccbef82f6bb3bc881bd9eb2791dd8": {
+    "pattern": "var/log",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.185966",
+    "updated_at": "2025-03-21T23:04:01.185966",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "20f4f429bc70461fa690ad3eefed8d5a": {
+    "pattern": "var/logs",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.187591",
+    "updated_at": "2025-03-21T23:04:01.187591",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "5150882b83f716d1964208e2beb668f0": {
+    "pattern": "var/log/nginx",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.189093",
+    "updated_at": "2025-03-21T23:04:01.189093",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "f7e4ddddf29f08d194da39d1a119bafd": {
+    "pattern": "var/log/apache",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.190567",
+    "updated_at": "2025-03-21T23:04:01.190567",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "c5a5241ad4efe7815967f5533eef06d4": {
+    "pattern": "var/log/httpd",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.192015",
+    "updated_at": "2025-03-21T23:04:01.192015",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "9195036528e651067eba516f44abd32c": {
+    "pattern": "var/log/apache2",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.193476",
+    "updated_at": "2025-03-21T23:04:01.193476",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "1d90f51c97b752f57bd45cf7db04ba4b": {
+    "pattern": "var/log/php",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.194943",
+    "updated_at": "2025-03-21T23:04:01.194943",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "7d4ca659d3da0f8a3ee81e9b64f08777": {
+    "pattern": "var/log/mysql",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.196418",
+    "updated_at": "2025-03-21T23:04:01.196418",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "aa5c56f3208b58a5a8cfc5a7e25ebee2": {
+    "pattern": "backups",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.197933",
+    "updated_at": "2025-03-21T23:04:01.197933",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "149603e6c03516362a8da23f624db945": {
+    "pattern": "old",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.199469",
+    "updated_at": "2025-03-21T23:04:01.199469",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "43781db5c40ecc39fd718685594f0956": {
+    "pattern": "save",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.200980",
+    "updated_at": "2025-03-21T23:04:01.200980",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "536a056b710e94b16169efd17a4a657b": {
+    "pattern": "saved",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.202498",
+    "updated_at": "2025-03-21T23:04:01.202498",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "e4ffc685395af5e75bcf875021c65d11": {
+    "pattern": "backup_db",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.204085",
+    "updated_at": "2025-03-21T23:04:01.204085",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "ccb4249f43be1534f58e9fe3a0b5752d": {
+    "pattern": "backup-db",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.205642",
+    "updated_at": "2025-03-21T23:04:01.205642",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "0a73aba3e53e960920c34dd3d323e2a1": {
+    "pattern": "db_backup",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.207186",
+    "updated_at": "2025-03-21T23:04:01.207186",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "40ad663fca3294cc30ab1f5fd386c6e0": {
+    "pattern": "db-backup",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.208732",
+    "updated_at": "2025-03-21T23:04:01.208732",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "4f679bb98b193cd6c08538a385b7ec22": {
+    "pattern": "mysql_backup",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.210282",
+    "updated_at": "2025-03-21T23:04:01.210282",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "7cd4a7b13f2de0ebd4f00446f3966829": {
+    "pattern": "sql_backup",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.211836",
+    "updated_at": "2025-03-21T23:04:01.211836",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "62a1023685d7cadfe2b741c856eb927b": {
+    "pattern": "database_backup",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.213396",
+    "updated_at": "2025-03-21T23:04:01.213396",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "41c3c0bc16a9ce40ea5a33623cde514f": {
+    "pattern": "site_backup",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.214965",
+    "updated_at": "2025-03-21T23:04:01.214965",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "fbf6400c2aa42ab516ce7b7c34a0a283": {
+    "pattern": "web_backup",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.216579",
+    "updated_at": "2025-03-21T23:04:01.216579",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "750b399df9bd6ea30434345a106b0e79": {
+    "pattern": "backup_files",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.218177",
+    "updated_at": "2025-03-21T23:04:01.218177",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "0918fabf70ff7e59c6e479f7a93439b3": {
+    "pattern": "backup-files",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.219810",
+    "updated_at": "2025-03-21T23:04:01.219810",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "589c7a3bbcbe55a009722592fd7c2c48": {
+    "pattern": "files_backup",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.221394",
+    "updated_at": "2025-03-21T23:04:01.221394",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "932e9ab5d2a1a89aa33cfc883bdfa713": {
+    "pattern": "files-backup",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.222988",
+    "updated_at": "2025-03-21T23:04:01.222988",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "16bca79f39ea99edf64988ded9dfe527": {
+    "pattern": "backup_config",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.224573",
+    "updated_at": "2025-03-21T23:04:01.224573",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "b441cf0c711f02f56686138ac5cf0dfd": {
+    "pattern": "backup-config",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.226178",
+    "updated_at": "2025-03-21T23:04:01.226178",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "d1cb31f1c7c8ab6286fb9b5b039f1287": {
+    "pattern": "config_backup",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.227780",
+    "updated_at": "2025-03-21T23:04:01.227780",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "79d8632214dc43a0bc5489fb04a2736b": {
+    "pattern": "config-backup",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.229417",
+    "updated_at": "2025-03-21T23:04:01.229417",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "bca6fe9713b3617d494c858867364cb5": {
+    "pattern": "backup_system",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.231071",
+    "updated_at": "2025-03-21T23:04:01.231071",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "8a708f72c13ab11167be0eb4370a887b": {
+    "pattern": "backup-system",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.232697",
+    "updated_at": "2025-03-21T23:04:01.232697",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "30743c08eadf387a9706cf6a6c623979": {
+    "pattern": "system_backup",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.234318",
+    "updated_at": "2025-03-21T23:04:01.234318",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "0fe972df6fa564da426ec6e9b4c813df": {
+    "pattern": "system-backup",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.235941",
+    "updated_at": "2025-03-21T23:04:01.235941",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "be7ad80cbb5525c2dd901585d60fd89e": {
+    "pattern": "backup.sql",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.237605",
+    "updated_at": "2025-03-21T23:04:01.237605",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "43c81979b8e3cde0c6a75a0e3928cea1": {
+    "pattern": "backup.gz",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.239275",
+    "updated_at": "2025-03-21T23:04:01.239275",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "308721f7e1495e988d7a6f865401daef": {
+    "pattern": "backup.tar",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.240896",
+    "updated_at": "2025-03-21T23:04:01.240896",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "5478e7dc73b0cdaf11b79528ec20e647": {
+    "pattern": "backup.zip",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.242514",
+    "updated_at": "2025-03-21T23:04:01.242514",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "0badc270a618192c27065db0dd578bff": {
+    "pattern": "backup.7z",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.244161",
+    "updated_at": "2025-03-21T23:04:01.244161",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "2f9f18bc2e6e8b1d83f197ced81fc412": {
+    "pattern": "backup.tar.gz",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.245804",
+    "updated_at": "2025-03-21T23:04:01.245804",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "73da33ade560b48c27af7e35bd86335b": {
+    "pattern": "backup.tar.bz2",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.247432",
+    "updated_at": "2025-03-21T23:04:01.247432",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "b569a30444c3b5ae30ff40f6a4ba2f67": {
+    "pattern": "backup.tgz",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.249057",
+    "updated_at": "2025-03-21T23:04:01.249057",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "acd45f38fa7e3ae00b839eed15a48298": {
+    "pattern": "backup.tbz2",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.250706",
+    "updated_at": "2025-03-21T23:04:01.250706",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "2245023265ae4cf87d02c8b6ba991139": {
+    "pattern": "config",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.252391",
+    "updated_at": "2025-03-21T23:04:01.252391",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "3a8e4c06e471595f6eb262bb9b5582d9": {
+    "pattern": "conf",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.254079",
+    "updated_at": "2025-03-21T23:04:01.254079",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "2e5d8aa3dfa8ef34ca5131d20f9dad51": {
+    "pattern": "settings",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.255779",
+    "updated_at": "2025-03-21T23:04:01.255779",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "a0f848942ce863cf53c0fa6cc684007d": {
+    "pattern": "setup",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.257456",
+    "updated_at": "2025-03-21T23:04:01.257456",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "19ad89bc3e3c9d7ef68b89523eff1987": {
+    "pattern": "install",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.259143",
+    "updated_at": "2025-03-21T23:04:01.259143",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "ccd1066343c95877b75b79d47c36bebe": {
+    "pattern": "configuration",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.260843",
+    "updated_at": "2025-03-21T23:04:01.260843",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "e2d5a00791bce9a01f99bc6fd613a39d": {
+    "pattern": "configure",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.262540",
+    "updated_at": "2025-03-21T23:04:01.262540",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "ff035a1dd7655da15295fa5fa89362a7": {
+    "pattern": "env",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.264229",
+    "updated_at": "2025-03-21T23:04:01.264229",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "e900e40bc91d3f9f7f0a99fed68a2e96": {
+    "pattern": "environment",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.265940",
+    "updated_at": "2025-03-21T23:04:01.265940",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "f579cccc964135c7d644c7b2d3b0d3ec": {
+    "pattern": ".env",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.267670",
+    "updated_at": "2025-03-21T23:04:01.267670",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "a53d9769108a807d7b87f335e0a16682": {
+    "pattern": ".git",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.269414",
+    "updated_at": "2025-03-21T23:04:01.269414",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "3519982b50d5704f4df83b1888285ae9": {
+    "pattern": ".svn",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.271195",
+    "updated_at": "2025-03-21T23:04:01.271195",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "8052c42ab3b8aa06a3f5f788a4ddccc2": {
+    "pattern": ".htaccess",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.272956",
+    "updated_at": "2025-03-21T23:04:01.272956",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "0ed3c2119f203df035d396aaee45a14a": {
+    "pattern": "web.config",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.274693",
+    "updated_at": "2025-03-21T23:04:01.274693",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "aa2646a667ee1cd83235786dccef4a26": {
+    "pattern": "robots.txt",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.276434",
+    "updated_at": "2025-03-21T23:04:01.276434",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "5d33eb6e08d0e909877a35911fee9f7c": {
+    "pattern": "sitemap.xml",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.278252",
+    "updated_at": "2025-03-21T23:04:01.278252",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "8f512e571161ed0633bd0628fda07588": {
+    "pattern": "crossdomain.xml",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.280018",
+    "updated_at": "2025-03-21T23:04:01.280018",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "9e5e2527d69c009a81b8ecd730f3957e": {
+    "pattern": "config.php",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.281770",
+    "updated_at": "2025-03-21T23:04:01.281770",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "2fd9419e43731bf51d68405f5ededb25": {
+    "pattern": "config.inc.php",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.283511",
+    "updated_at": "2025-03-21T23:04:01.283511",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "17bee78aacd88d2f06be9c55201499a4": {
+    "pattern": "config.inc",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.285274",
+    "updated_at": "2025-03-21T23:04:01.285274",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "38589f3a5b1e8e2eca835f956b204e0e": {
+    "pattern": "config.ini",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.287063",
+    "updated_at": "2025-03-21T23:04:01.287063",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "06b2d3b23dce96e1619d2b53d6c947ec": {
+    "pattern": "config.json",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.288857",
+    "updated_at": "2025-03-21T23:04:01.288857",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "0f1be8eec416e71c28b41efb0544df26": {
+    "pattern": "config.yml",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.290661",
+    "updated_at": "2025-03-21T23:04:01.290661",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "259fe82e12a866f01123927480c7851b": {
+    "pattern": "config.yaml",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.292642",
+    "updated_at": "2025-03-21T23:04:01.292642",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "b92ff3fc4e99566347d724dd41648e64": {
+    "pattern": "config.xml",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.294484",
+    "updated_at": "2025-03-21T23:04:01.294484",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "e22b50e740e102c8de5e858dbcd7753d": {
+    "pattern": "config.js",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.296274",
+    "updated_at": "2025-03-21T23:04:01.296274",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "77c7aa09a01bec24c719ed52a31bb9e7": {
+    "pattern": "config.conf",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.298139",
+    "updated_at": "2025-03-21T23:04:01.298139",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "0f09563fd58c8d08b8ce419fe47a5180": {
+    "pattern": "config.local",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.299949",
+    "updated_at": "2025-03-21T23:04:01.299949",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "e3731893ad28cf64d0329acf811fb0dd": {
+    "pattern": "config.dev",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.301803",
+    "updated_at": "2025-03-21T23:04:01.301803",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "fbe27f682cb92ee476e67c799a988bbb": {
+    "pattern": "config.prod",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.303617",
+    "updated_at": "2025-03-21T23:04:01.303617",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "b82b543e387326281877eb0731637b8c": {
+    "pattern": "config.staging",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.305452",
+    "updated_at": "2025-03-21T23:04:01.305452",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "d339ea411d998dd44bb07176e2980b7f": {
+    "pattern": "config.test",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.307364",
+    "updated_at": "2025-03-21T23:04:01.307364",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "f36bc7893d2062f735245851fd9860fa": {
+    "pattern": "config.debug",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.309226",
+    "updated_at": "2025-03-21T23:04:01.309226",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "11003c47055650336a7a9fe7f7920f09": {
+    "pattern": "config.default",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.311141",
+    "updated_at": "2025-03-21T23:04:01.311141",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "6cb0939dd944ed04160e52e1c7e6d29b": {
+    "pattern": "config.template",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.313046",
+    "updated_at": "2025-03-21T23:04:01.313046",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "755a5b26e014be32395d2ff7f722e183": {
+    "pattern": "config.sample",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.314970",
+    "updated_at": "2025-03-21T23:04:01.314970",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "dfcef0d6aaec5035140e47630757b23f": {
+    "pattern": "config.example",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.317116",
+    "updated_at": "2025-03-21T23:04:01.317116",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "959d3ecc8c5c6007327e149000dcf421": {
+    "pattern": "config.bak",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.319054",
+    "updated_at": "2025-03-21T23:04:01.319054",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "c4d21ffc73b8467045eb719bc86314ae": {
+    "pattern": "config.old",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.320969",
+    "updated_at": "2025-03-21T23:04:01.320969",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "bbfa74feafe87557fe95f99f69522a6a": {
+    "pattern": "config.orig",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.322869",
+    "updated_at": "2025-03-21T23:04:01.322869",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "14e42d38f65b60594192107d8954911e": {
+    "pattern": "config.backup",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.324800",
+    "updated_at": "2025-03-21T23:04:01.324800",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "3a8270dae2b17999b935edc868c22ceb": {
+    "pattern": "settings.php",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.326711",
+    "updated_at": "2025-03-21T23:04:01.326711",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "e3c04ec0596debbaec88701194b4b4cf": {
+    "pattern": "settings.inc.php",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.328650",
+    "updated_at": "2025-03-21T23:04:01.328650",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "8228e1469ce874d99adad6441463f503": {
+    "pattern": "settings.ini",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.331043",
+    "updated_at": "2025-03-21T23:04:01.331043",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "9f423fcac90bf80939d78b509e9c2dd2": {
+    "pattern": "settings.json",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.333329",
+    "updated_at": "2025-03-21T23:04:01.333329",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "98126fffe52a5bcbb73fa2926d7732dd": {
+    "pattern": "settings.yml",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.335728",
+    "updated_at": "2025-03-21T23:04:01.335728",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "d12b72dcc6d6c362dd31d73aa046efac": {
+    "pattern": "settings.yaml",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.337855",
+    "updated_at": "2025-03-21T23:04:01.337855",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "4d5199f7e02379b759916edeaf048f64": {
+    "pattern": "settings.xml",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.340215",
+    "updated_at": "2025-03-21T23:04:01.340215",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "2d78dada12f5fa4f3183bc45f30f590c": {
+    "pattern": "settings.js",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.342477",
+    "updated_at": "2025-03-21T23:04:01.342477",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "ffa72771c95eee6a25e8b7efabf390bf": {
+    "pattern": "settings.conf",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.344524",
+    "updated_at": "2025-03-21T23:04:01.344524",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "b46c6e6e6c97086951d13a2c86453df6": {
+    "pattern": "settings.local",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.346518",
+    "updated_at": "2025-03-21T23:04:01.346518",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "1aa77d28b4f1dd9ee9243b0804ab064c": {
+    "pattern": "settings.dev",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.348533",
+    "updated_at": "2025-03-21T23:04:01.348533",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "3f7d1cafe016441ee652ce4d1eee52f3": {
+    "pattern": "settings.prod",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.350544",
+    "updated_at": "2025-03-21T23:04:01.350544",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "8a5da52ed126447d359e70c05721a8aa": {
+    "pattern": "api",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.352573",
+    "updated_at": "2025-03-21T23:04:01.352573",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "2c287b831a4b8458d017e58d4d38bb45": {
+    "pattern": "api/v1",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.354623",
+    "updated_at": "2025-03-21T23:04:01.354623",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "6adb5335263e248f8f38695ce342bd49": {
+    "pattern": "api/v2",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.356636",
+    "updated_at": "2025-03-21T23:04:01.356636",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "6725a9c1ee1c9089405252d0b5dbf532": {
+    "pattern": "api/v3",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.358658",
+    "updated_at": "2025-03-21T23:04:01.358658",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "c935c0d310a612f1b6f9537659285185": {
+    "pattern": "api/v4",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.360696",
+    "updated_at": "2025-03-21T23:04:01.360696",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "11610e197e76004a1f1507ed0bd032e0": {
+    "pattern": "api/v5",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.362955",
+    "updated_at": "2025-03-21T23:04:01.362955",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "5f69e108bfb5d57822a8ee4d9f091842": {
+    "pattern": "api/latest",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.365133",
+    "updated_at": "2025-03-21T23:04:01.365133",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "4a14f69e0c4618fcae0087dae38100de": {
+    "pattern": "api/beta",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.367663",
+    "updated_at": "2025-03-21T23:04:01.367663",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "5b03e80ff1fb50b97766d4a7410f5b83": {
+    "pattern": "api/alpha",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.370022",
+    "updated_at": "2025-03-21T23:04:01.370022",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "f26412f212ecd8da44834434d0ec0ff7": {
+    "pattern": "api/test",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.372432",
+    "updated_at": "2025-03-21T23:04:01.372432",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "10d06cc50ea667c7e91a3f974877a896": {
+    "pattern": "api/dev",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.374608",
+    "updated_at": "2025-03-21T23:04:01.374608",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "2b6110724d591c63c155319cefd0c226": {
+    "pattern": "api/staging",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.376711",
+    "updated_at": "2025-03-21T23:04:01.376711",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "f3948eff92df8aa15b48dd1a2ba2cdd0": {
+    "pattern": "api/prod",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.378829",
+    "updated_at": "2025-03-21T23:04:01.378829",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "7f8363b874c54f597db1a159d122153f": {
+    "pattern": "api/docs",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.380888",
+    "updated_at": "2025-03-21T23:04:01.380888",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "af94a542204aaadbfca16639da5b244e": {
+    "pattern": "api/swagger",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.382973",
+    "updated_at": "2025-03-21T23:04:01.382973",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "320aa1286cfff9740ddba2a5d7300ca0": {
+    "pattern": "api/graphql",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.385039",
+    "updated_at": "2025-03-21T23:04:01.385039",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "db28241e14842970c5ec85d694de7b25": {
+    "pattern": "api/rest",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.387116",
+    "updated_at": "2025-03-21T23:04:01.387116",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "2021fa4e8d5a0192bc476eb9db33621b": {
+    "pattern": "api/soap",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.389233",
+    "updated_at": "2025-03-21T23:04:01.389233",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "84540e2476a455a406ac32b9d695fc4f": {
+    "pattern": "api/json",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.391389",
+    "updated_at": "2025-03-21T23:04:01.391389",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "eb31e1fa3f06773fd12a9bd26d736669": {
+    "pattern": "api/xml",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.393535",
+    "updated_at": "2025-03-21T23:04:01.393535",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "d0fa4f1d01281148823f8610361f7672": {
+    "pattern": "api/rpc",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.395696",
+    "updated_at": "2025-03-21T23:04:01.395696",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "7a9691ca7511442445f82394c64244e4": {
+    "pattern": "api/internal",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.397834",
+    "updated_at": "2025-03-21T23:04:01.397834",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "579d39c2639b46f686b9c0e95796e272": {
+    "pattern": "api/external",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.399985",
+    "updated_at": "2025-03-21T23:04:01.399985",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "3b1cfcd2de688d4ae315a48507664f3c": {
+    "pattern": "api/public",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.402141",
+    "updated_at": "2025-03-21T23:04:01.402141",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "bada00904dd6fd49351df80b642461a2": {
+    "pattern": "api/private",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.404315",
+    "updated_at": "2025-03-21T23:04:01.404315",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "8f56eee968ffba8c58ead857489333c7": {
+    "pattern": "api/open",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.406500",
+    "updated_at": "2025-03-21T23:04:01.406500",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "df9cf4c95886f992875d1fb81c5e934d": {
+    "pattern": "api/secure",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.408779",
+    "updated_at": "2025-03-21T23:04:01.408779",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "66c62170e909d4feafd920fad8cb0c25": {
+    "pattern": "api/auth",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.410921",
+    "updated_at": "2025-03-21T23:04:01.410921",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "d7979608a1fe2105a020dd1f3d65f683": {
+    "pattern": "api/oauth",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.413065",
+    "updated_at": "2025-03-21T23:04:01.413065",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "9071393bc079c5e6b8eea57fc0242217": {
+    "pattern": "api/jwt",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.415233",
+    "updated_at": "2025-03-21T23:04:01.415233",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "d56b699830e77ba53855679cb1d252da": {
+    "pattern": "login",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.417417",
+    "updated_at": "2025-03-21T23:04:01.417417",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "4236a440a662cc8253d7536e5aa17942": {
+    "pattern": "logout",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.419575",
+    "updated_at": "2025-03-21T23:04:01.419575",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "cc0256df40cbc924af2b31aeccb869b0": {
+    "pattern": "signin",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.421727",
+    "updated_at": "2025-03-21T23:04:01.421727",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "472403c11e7e2dadfae8b77b57ae2d5e": {
+    "pattern": "signout",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.423889",
+    "updated_at": "2025-03-21T23:04:01.423889",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "9de4a97425678c5b1288aa70c1669a64": {
+    "pattern": "register",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.426259",
+    "updated_at": "2025-03-21T23:04:01.426259",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "7d2abf2d0fa7c3a0c13236910f30bc43": {
+    "pattern": "signup",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.428446",
+    "updated_at": "2025-03-21T23:04:01.428446",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "5f4dcc3b5aa765d61d8327deb882cf99": {
+    "pattern": "password",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.430658",
+    "updated_at": "2025-03-21T23:04:01.430658",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "76a2173be6393254e72ffa4d6df1030a": {
+    "pattern": "passwd",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.432872",
+    "updated_at": "2025-03-21T23:04:01.432872",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "00e2a8f568ff592a6f19d15f6fece067": {
+    "pattern": "forgot-password",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.435067",
+    "updated_at": "2025-03-21T23:04:01.435067",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "037c60027d8fd8b8221d2a4ecc803574": {
+    "pattern": "reset-password",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.437286",
+    "updated_at": "2025-03-21T23:04:01.437286",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "717c10b2cccb36ca57ed94c149694d2b": {
+    "pattern": "change-password",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.439531",
+    "updated_at": "2025-03-21T23:04:01.439531",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "f9a16c12eaac3c33e4196fb6052a4d43": {
+    "pattern": "update-password",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.441782",
+    "updated_at": "2025-03-21T23:04:01.441782",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "cb159e1ec61d0613f10ab397d8bd6782": {
+    "pattern": "password-reset",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.444034",
+    "updated_at": "2025-03-21T23:04:01.444034",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "fa53b91ccc1b78668d5af58e1ed3a485": {
+    "pattern": "auth",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.446323",
+    "updated_at": "2025-03-21T23:04:01.446323",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "6fa691d2c07bea6ae78b7022c80e9d20": {
+    "pattern": "authentication",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.448612",
+    "updated_at": "2025-03-21T23:04:01.448612",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "0c5c43c7900a58a998c872f937ae33ad": {
+    "pattern": "authorize",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.450910",
+    "updated_at": "2025-03-21T23:04:01.450910",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "8f554894c71f78264ea2fbfbff7c80f4": {
+    "pattern": "authorization",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.453185",
+    "updated_at": "2025-03-21T23:04:01.453185",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "7c82e855b0415f27bd92d2fb4f415350": {
+    "pattern": "oauth",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.455493",
+    "updated_at": "2025-03-21T23:04:01.455493",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "da0048d0899c4f123beb9593706b9f14": {
+    "pattern": "oauth2",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.457774",
+    "updated_at": "2025-03-21T23:04:01.457774",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "369db21a386ae433e65c0ff34d35708d": {
+    "pattern": "openid",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.460058",
+    "updated_at": "2025-03-21T23:04:01.460058",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "d3b49d8ee436dc2d239ad3d73a97e89e": {
+    "pattern": "saml",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.462485",
+    "updated_at": "2025-03-21T23:04:01.462485",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "b5164fbdf0a4526876438e688f5e4130": {
+    "pattern": "sso",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.464877",
+    "updated_at": "2025-03-21T23:04:01.464877",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "e91e6348157868de9dd8b25c81aebfb9": {
+    "pattern": "security",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.467248",
+    "updated_at": "2025-03-21T23:04:01.467248",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "73dce75d92181ca956e737b3cb66db98": {
+    "pattern": "login.php",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.469605",
+    "updated_at": "2025-03-21T23:04:01.469605",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "31e4d2d203bca9cc11d824ad1449f8ee": {
+    "pattern": "login.asp",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.471959",
+    "updated_at": "2025-03-21T23:04:01.471959",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "99ed46e65b3f2470c27ff83405974c08": {
+    "pattern": "login.jsp",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.474349",
+    "updated_at": "2025-03-21T23:04:01.474349",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "99bad02247f3eae83c76aa3fe371b715": {
+    "pattern": "login.html",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.476899",
+    "updated_at": "2025-03-21T23:04:01.476899",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "f43d4c59d581634c090e3b5fe2fc5253": {
+    "pattern": "login.htm",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.479301",
+    "updated_at": "2025-03-21T23:04:01.479301",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "63bd25c8db9724f610636fdf20d9a52a": {
+    "pattern": "user-login",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.481698",
+    "updated_at": "2025-03-21T23:04:01.481698",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "fd26dec3c60440296a53a40e7e5c2120": {
+    "pattern": "member-login",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.484024",
+    "updated_at": "2025-03-21T23:04:01.484024",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "555bbbb418fcfa53242a5ad0823c1da1": {
+    "pattern": "customer-login",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.486417",
+    "updated_at": "2025-03-21T23:04:01.486417",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "30b5603d464526ce748f19b65f502e1a": {
+    "pattern": "phpmyadmin",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.488775",
+    "updated_at": "2025-03-21T23:04:01.488775",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "378aee4e2233bc4ff4584b5691649b2e": {
+    "pattern": "phpMyAdmin",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.491142",
+    "updated_at": "2025-03-21T23:04:01.491142",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "15eed4d30e4e0fa9dd36f96237b1024c": {
+    "pattern": "myadmin",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.493538",
+    "updated_at": "2025-03-21T23:04:01.493538",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "81c3b080dad537de7e10e0987a4bf52e": {
+    "pattern": "mysql",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.495950",
+    "updated_at": "2025-03-21T23:04:01.495950",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "ac5c74b64b4b8352ef2f181affb5ac2a": {
+    "pattern": "sql",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.498321",
+    "updated_at": "2025-03-21T23:04:01.498321",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "11e0eed8d3696c0a632f822df385ab3c": {
+    "pattern": "database",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.500752",
+    "updated_at": "2025-03-21T23:04:01.500752",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "d77d5e503ad1439f585ac494268b351b": {
+    "pattern": "db",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.503134",
+    "updated_at": "2025-03-21T23:04:01.503134",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "03a73f3e7c9a7b38d196cd34c072567e": {
+    "pattern": "dbadmin",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.505663",
+    "updated_at": "2025-03-21T23:04:01.505663",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "0b88c36a8dbe5f0239c0e2fad08d4118": {
+    "pattern": "web/phpMyAdmin",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.508130",
+    "updated_at": "2025-03-21T23:04:01.508130",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "9be5e37f87e4254214b0a9d72feeaa79": {
+    "pattern": "mysql/admin",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.510608",
+    "updated_at": "2025-03-21T23:04:01.510608",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "1071546df55736a5d839132495568e74": {
+    "pattern": "mysql/db",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.513090",
+    "updated_at": "2025-03-21T23:04:01.513090",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "faed13130aadc1b32be274814cee61de": {
+    "pattern": "mysqladmin",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.515522",
+    "updated_at": "2025-03-21T23:04:01.515522",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "c315e9d7a79520a4a5f7ea1c7562ffb5": {
+    "pattern": "mysql-admin",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.517970",
+    "updated_at": "2025-03-21T23:04:01.517970",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "d365ef90c1211fdd6fbfb6eb79eb37b0": {
+    "pattern": "mysql_admin",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.520414",
+    "updated_at": "2025-03-21T23:04:01.520414",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "5828bcb63503087944302fa0d1cb3e83": {
+    "pattern": "sqlweb",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.522848",
+    "updated_at": "2025-03-21T23:04:01.522848",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "bbb2bd6b49fa00da481ed779be087f64": {
+    "pattern": "webdb",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.525309",
+    "updated_at": "2025-03-21T23:04:01.525309",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "335cea69c97f70dd4f925d77723fa692": {
+    "pattern": "websql",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.527779",
+    "updated_at": "2025-03-21T23:04:01.527779",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "2eb3b8c09595a9f2141fab92897a5ba5": {
+    "pattern": "sqladmin",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.530319",
+    "updated_at": "2025-03-21T23:04:01.530319",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "8d453dbe45ba75e71cfd768825ac931e": {
+    "pattern": "sql-admin",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.532798",
+    "updated_at": "2025-03-21T23:04:01.532798",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "d11e6d67add083e498ce8536867d6893": {
+    "pattern": "db-admin",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.535276",
+    "updated_at": "2025-03-21T23:04:01.535276",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "d6fef8a900a9a44538e45b2f77376ea8": {
+    "pattern": "database-admin",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.537772",
+    "updated_at": "2025-03-21T23:04:01.537772",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "a945e003507368542f40f13b3076ca6f": {
+    "pattern": "dbmanager",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.540276",
+    "updated_at": "2025-03-21T23:04:01.540276",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "1f4b7b70b58658b0874660fe115ba215": {
+    "pattern": "db-manager",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.542773",
+    "updated_at": "2025-03-21T23:04:01.542773",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "dc67204fcf8c51c3dcd57d53fa271e08": {
+    "pattern": "sql-manager",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.545328",
+    "updated_at": "2025-03-21T23:04:01.545328",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "0420797794ef77dcf32d3f0c3ad7e825": {
+    "pattern": "server-status",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.547874",
+    "updated_at": "2025-03-21T23:04:01.547874",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "440c2217e6207c54c317c296f71f9769": {
+    "pattern": "server-info",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.550385",
+    "updated_at": "2025-03-21T23:04:01.550385",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "9acb44549b41563697bb490144ec6258": {
+    "pattern": "status",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.552903",
+    "updated_at": "2025-03-21T23:04:01.552903",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "446501053769c06c565094b26d26e8ef": {
+    "pattern": "stats",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.555482",
+    "updated_at": "2025-03-21T23:04:01.555482",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "a912a94d79b5124d876951f96ebb256f": {
+    "pattern": "statistics",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.558108",
+    "updated_at": "2025-03-21T23:04:01.558108",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "caf9b6b99962bf5c2264824231d7a40c": {
+    "pattern": "info",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.560703",
+    "updated_at": "2025-03-21T23:04:01.560703",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "85045e319309968c6b040fc7c18a1ae8": {
+    "pattern": "phpinfo.php",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.563278",
+    "updated_at": "2025-03-21T23:04:01.563278",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "9ae9a9523d788bf570f6ef0e36a1724a": {
+    "pattern": "php_info.php",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.565857",
+    "updated_at": "2025-03-21T23:04:01.565857",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "eb6d80f6fa6bf22d869c8ac6c5bdbc7b": {
+    "pattern": "info.php",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.568462",
+    "updated_at": "2025-03-21T23:04:01.568462",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "93bc3c03503d8768cf7cc1e39ce16fcb": {
+    "pattern": "test.php",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.571046",
+    "updated_at": "2025-03-21T23:04:01.571046",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "3d35ad0144ea35b0e65727026436e651": {
+    "pattern": "probe.php",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.573629",
+    "updated_at": "2025-03-21T23:04:01.573629",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "97b2feeb955630f6785a66a048f54b6e": {
+    "pattern": "status.php",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.576277",
+    "updated_at": "2025-03-21T23:04:01.576277",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "08b5411f848a2581a41672a759c87380": {
+    "pattern": "monitor",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.578900",
+    "updated_at": "2025-03-21T23:04:01.578900",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "89948c7f4890af5ff18524b4fc3f3611": {
+    "pattern": "monitoring",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.582958",
+    "updated_at": "2025-03-21T23:04:01.582958",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "555bf8344ca0caf09b42f55e185526d8": {
+    "pattern": "health",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.585764",
+    "updated_at": "2025-03-21T23:04:01.585764",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "37c72e39a9cb88b7964daac6411f404b": {
+    "pattern": "healthcheck",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.588521",
+    "updated_at": "2025-03-21T23:04:01.588521",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "480aa49d75b1748fcbf6933c4c409af5": {
+    "pattern": "health-check",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.591247",
+    "updated_at": "2025-03-21T23:04:01.591247",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "df911f0151f9ef021d410b4be5060972": {
+    "pattern": "ping",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.594513",
+    "updated_at": "2025-03-21T23:04:01.594513",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "cf1e8c14e54505f60aa10ceb8d5d8ab3": {
+    "pattern": "server",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.597419",
+    "updated_at": "2025-03-21T23:04:01.597419",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "67b3dba8bc6778101892eb77249db32e": {
+    "pattern": "host",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.600304",
+    "updated_at": "2025-03-21T23:04:01.600304",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "54b53072540eeeb8f8e9343e71f28176": {
+    "pattern": "system",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.603449",
+    "updated_at": "2025-03-21T23:04:01.603449",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "af6f76f73f7bbc78ac093ab17179d79c": {
+    "pattern": "sysinfo",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.606603",
+    "updated_at": "2025-03-21T23:04:01.606603",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "4eaee07ab11630b8789fe530fbd7286b": {
+    "pattern": "sys-info",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.609531",
+    "updated_at": "2025-03-21T23:04:01.609531",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "a216f4b9231839592515b42a2a106ab5": {
+    "pattern": "serverinfo",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.612385",
+    "updated_at": "2025-03-21T23:04:01.612385",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "caaa7ba46bb71639274cd9a055eaf27b": {
+    "pattern": "wp-admin",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.615575",
+    "updated_at": "2025-03-21T23:04:01.615575",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "21e558d425bf38e4a2473c40a5b0b2b9": {
+    "pattern": "wp-login",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.618470",
+    "updated_at": "2025-03-21T23:04:01.618470",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "358006170b5d31ff0523c1656df7b82e": {
+    "pattern": "wp-config",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.621386",
+    "updated_at": "2025-03-21T23:04:01.621386",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "e0526987d4c287d072ebdab374f4d549": {
+    "pattern": "wp-content",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.624328",
+    "updated_at": "2025-03-21T23:04:01.624328",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "39d297286dd5bc39ac5cf2626d3d47e8": {
+    "pattern": "wp-includes",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.627208",
+    "updated_at": "2025-03-21T23:04:01.627208",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "1870a829d9bc69abf500eca6f00241fe": {
+    "pattern": "wordpress",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.630082",
+    "updated_at": "2025-03-21T23:04:01.630082",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "b6ddd84a9cc636257258701ca934e763": {
+    "pattern": "wp",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.632942",
+    "updated_at": "2025-03-21T23:04:01.632942",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "126ac9f6149081eb0e97c2e939eaad52": {
+    "pattern": "blog",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.635815",
+    "updated_at": "2025-03-21T23:04:01.635815",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "226776f356d7ecf58b60bab12a05d38f": {
+    "pattern": "joomla",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.638612",
+    "updated_at": "2025-03-21T23:04:01.638612",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "08d15a4aef553492d8971cdd5198f314": {
+    "pattern": "drupal",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.641480",
+    "updated_at": "2025-03-21T23:04:01.641480",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "b8e065255d5326ea3cf1f85b0dd764f3": {
+    "pattern": "magento",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.644326",
+    "updated_at": "2025-03-21T23:04:01.644326",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "0659e0de287281473da4d859f0b9ef35": {
+    "pattern": "laravel",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.647083",
+    "updated_at": "2025-03-21T23:04:01.647083",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "78d5167ff84ccbb91fd6211cedb45667": {
+    "pattern": "symfony",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.649872",
+    "updated_at": "2025-03-21T23:04:01.649872",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "2b9afb89a6acc1575b159bfca38d10ad": {
+    "pattern": "django",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.652692",
+    "updated_at": "2025-03-21T23:04:01.652692",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "319c3206a7f10c17c3b9116d4a957646": {
+    "pattern": "flask",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.655481",
+    "updated_at": "2025-03-21T23:04:01.655481",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "4d003d1435f0827cfe18ac2d2a3979e7": {
+    "pattern": "rails",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.658307",
+    "updated_at": "2025-03-21T23:04:01.658307",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "2a2d595e6ed9a0b24f027f2b63b134d6": {
+    "pattern": "spring",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.661168",
+    "updated_at": "2025-03-21T23:04:01.661168",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "540eee6c95a0ea77a4cb260db42998e7": {
+    "pattern": "struts",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.664320",
+    "updated_at": "2025-03-21T23:04:01.664320",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "36c4536996ca5615dcf9911f068786dc": {
+    "pattern": "node",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.667300",
+    "updated_at": "2025-03-21T23:04:01.667300",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "d18b8624a0f5f721da7b82365fc562dd": {
+    "pattern": "angular",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.670223",
+    "updated_at": "2025-03-21T23:04:01.670223",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "266a1f7c2e2345169d3bc448da45eae6": {
+    "pattern": "react",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.673476",
+    "updated_at": "2025-03-21T23:04:01.673476",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "951c1f757a9f918f0624cd5cb90b890d": {
+    "pattern": "vue",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.676539",
+    "updated_at": "2025-03-21T23:04:01.676539",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "570d99e4c85914470d914170d1e95144": {
+    "pattern": "cms",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.679623",
+    "updated_at": "2025-03-21T23:04:01.679623",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "98defd6ee70dfb1dea416cecdf391f58": {
+    "pattern": "site",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.682631",
+    "updated_at": "2025-03-21T23:04:01.682631",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "2567a5ec9705eb7ac2c984033e06189d": {
+    "pattern": "web",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.685571",
+    "updated_at": "2025-03-21T23:04:01.685571",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "d2a57dc1d883fd21fb9951699df71cc7": {
+    "pattern": "app",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.688470",
+    "updated_at": "2025-03-21T23:04:01.688470",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "3676d55f84497cbeadfc614c1b1b62fc": {
+    "pattern": "application",
+    "source": "base_patterns",
+    "confidence": 0.8,
+    "created_at": "2025-03-21T23:04:01.691643",
+    "updated_at": "2025-03-21T23:04:01.691643",
+    "usage_count": 0,
+    "metadata": {
+      "type": "base",
+      "description": "Base pattern from initial dataset"
+    }
+  },
+  "3ff191a8e7c05cef01dd1009aa2b3565": {
+    "pattern": "admin_backup.zip",
+    "source": "example",
+    "confidence": 0.95,
+    "created_at": "2025-03-21T23:04:01.697990",
+    "updated_at": "2025-03-21T23:04:01.707059",
+    "usage_count": 0,
+    "metadata": {
+      "type": "backup_file",
+      "risk": "high",
+      "description": "Admin backup file"
+    }
+  }
+}

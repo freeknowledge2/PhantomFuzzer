@@ -1,0 +1,110 @@
+# Common file extensions to check
+# Format: extension:weight (1-10, higher = more likely)
+
+# Configuration files
+.conf:9
+.config:9
+.cfg:8
+.ini:8
+.env:10
+.json:8
+.yaml:8
+.yml:8
+.xml:7
+.properties:7
+
+# Web files
+.php:9
+.asp:8
+.aspx:8
+.jsp:8
+.html:7
+.htm:7
+.shtml:7
+.phtml:7
+.cgi:8
+.pl:7
+.py:8
+.rb:7
+
+# Backup files
+.bak:9
+.backup:9
+.old:8
+.orig:8
+.copy:7
+.tmp:8
+.temp:8
+.swp:7
+.save:7
+~:6
+
+# Log files
+.log:9
+.logs:9
+.error:8
+.debug:8
+.trace:7
+.access:8
+
+# Database files
+.sql:9
+.db:9
+.sqlite:8
+.sqlite3:8
+.mdb:7
+.accdb:7
+.mysql:7
+.pgsql:7
+
+# Archive files
+.zip:8
+.tar:8
+.gz:8
+.tgz:8
+.rar:7
+.7z:7
+.bz2:7
+
+# Documentation
+.txt:7
+.md:7
+.pdf:6
+.doc:6
+.docx:6
+.rtf:5
+.csv:7
+.xls:6
+.xlsx:6
+
+# Development
+.git:10
+.svn:8
+.htaccess:9
+.htpasswd:9
+.sh:8
+.bash:7
+.npmrc:8
+.yarnrc:7
+.env.local:9
+.env.development:8
+.env.production:9
+
+# Security
+.key:10
+.pem:10
+.crt:9
+.cer:9
+.csr:8
+.p12:8
+.pfx:8
+.jks:8
+
+# Application specific
+.dll:7
+.so:7
+.exe:7
+.bin:7
+.pid:7
+.socket:7
+.lock:7
