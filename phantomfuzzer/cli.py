@@ -299,21 +299,49 @@ def web_scanner(ctx, url, depth, threads, user_agent, cookies, headers, auth, ou
         results = web_scanner.scan(url)
         
         # Process and output results
-        if results:
-            click.echo(f"\nFound {len(results)} vulnerabilities")
-            
-            # Format output
-            if format == 'json':
-                output_data = results.to_json(pretty=True)
-            elif format == 'html':
-                # Simple HTML report
-                # Get IP information from scan_info
-                ip_info = results.scan_info.get('ip_information', {})
-                ip_address = ip_info.get('ip_address', 'Unknown')
-                hostname = ip_info.get('hostname', 'Unknown')
-                hostname_from_ip = ip_info.get('hostname_from_ip', 'Unknown')
+        try:
+            if results and len(results) > 0:
+                # Ensure results is iterable
+                if not hasattr(results, '__iter__'):
+                    results = [results]
                 
-                output_data = f"""<html>
+                click.echo(f"\nFound {len(results)} vulnerabilities")
+                
+                # Format output
+                if format == 'json':
+                    # Convert results to dict list for JSON serialization
+                    results_list = []
+                    for vuln in results:
+                        vuln_dict = {
+                            'name': getattr(vuln, 'name', 'Unknown'),
+                            'severity': getattr(vuln, 'severity', 'Unknown'),
+                            'description': getattr(vuln, 'description', 'N/A'),
+                            'location': getattr(vuln, 'location', 'N/A'),
+                            'evidence': getattr(vuln, 'evidence', None),
+                            'remediation': getattr(vuln, 'remediation', None)
+                        }
+                        results_list.append(vuln_dict)
+                    
+                    # Get IP information from scan_info if available
+                    scan_info = getattr(results, 'scan_info', {}) if hasattr(results, 'scan_info') else {}
+                    ip_info = scan_info.get('ip_information', {})
+                    
+                    output_data = json.dumps({
+                        'target': url,
+                        'ip_information': ip_info,
+                        'vulnerabilities_count': len(results),
+                        'vulnerabilities': results_list
+                    }, indent=2)
+                elif format == 'html':
+                    # Simple HTML report
+                    # Get IP information from scan_info if available
+                    scan_info = getattr(results, 'scan_info', {}) if hasattr(results, 'scan_info') else {}
+                    ip_info = scan_info.get('ip_information', {})
+                    ip_address = ip_info.get('ip_address', 'Unknown')
+                    hostname = ip_info.get('hostname', 'Unknown')
+                    hostname_from_ip = ip_info.get('hostname_from_ip', 'Unknown')
+                    
+                    output_data = f"""<html>
 <head><title>PhantomFuzzer Web Scanning Results</title></head>
 <body>
 <h1>PhantomFuzzer Web Scanning Results</h1>
@@ -327,41 +355,67 @@ def web_scanner(ctx, url, depth, threads, user_agent, cookies, headers, auth, ou
 <p>Found {len(results)} vulnerabilities</p>
 <ul>
 """
-                for vuln in results:
-                    output_data += f"<li><strong>{vuln.name}</strong>: {vuln.description}</li>\n"
-                    output_data += f"<ul><li>Severity: {vuln.severity}</li>"
-                    output_data += f"<li>Location: {vuln.location}</li>"
-                    if vuln.evidence:
-                        output_data += f"<li>Evidence: {vuln.evidence}</li>"
-                    if vuln.remediation:
-                        output_data += f"<li>Remediation: {vuln.remediation}</li>"
-                    output_data += "</ul>"
-                output_data += "</ul>\n</body>\n</html>"
-            else:  # text format
-                # Get IP information from scan_info
-                ip_info = results.scan_info.get('ip_information', {})
-                ip_address = ip_info.get('ip_address', 'Unknown')
-                hostname = ip_info.get('hostname', 'Unknown')
-                hostname_from_ip = ip_info.get('hostname_from_ip', 'Unknown')
+                    for vuln in results:
+                        vuln_name = getattr(vuln, 'name', 'Unknown')
+                        vuln_desc = getattr(vuln, 'description', 'N/A')
+                        vuln_severity = getattr(vuln, 'severity', 'Unknown')
+                        vuln_location = getattr(vuln, 'location', 'N/A')
+                        vuln_evidence = getattr(vuln, 'evidence', None)
+                        vuln_remediation = getattr(vuln, 'remediation', None)
+                        
+                        output_data += f"<li><strong>{vuln_name}</strong>: {vuln_desc}</li>\n"
+                        output_data += f"<ul><li>Severity: {vuln_severity}</li>"
+                        output_data += f"<li>Location: {vuln_location}</li>"
+                        if vuln_evidence:
+                            output_data += f"<li>Evidence: {vuln_evidence}</li>"
+                        if vuln_remediation:
+                            output_data += f"<li>Remediation: {vuln_remediation}</li>"
+                        output_data += "</ul>"
+                    output_data += "</ul>\n</body>\n</html>"
+                else:  # text format
+                    # Get IP information from scan_info if available
+                    scan_info = getattr(results, 'scan_info', {}) if hasattr(results, 'scan_info') else {}
+                    ip_info = scan_info.get('ip_information', {})
+                    ip_address = ip_info.get('ip_address', 'Unknown')
+                    hostname = ip_info.get('hostname', 'Unknown')
+                    hostname_from_ip = ip_info.get('hostname_from_ip', 'Unknown')
+                    
+                    output_data = f"PhantomFuzzer Web Scanning Results\n\nTarget: {url}\nIP Address: {ip_address}\nHostname: {hostname}\nReverse DNS: {hostname_from_ip}\nFound {len(results)} vulnerabilities\n\n"
+                    for i, vuln in enumerate(results, 1):
+                        vuln_name = getattr(vuln, 'name', 'Unknown')
+                        vuln_desc = getattr(vuln, 'description', 'N/A')
+                        vuln_severity = getattr(vuln, 'severity', 'Unknown')
+                        vuln_location = getattr(vuln, 'location', 'N/A')
+                        vuln_evidence = getattr(vuln, 'evidence', None)
+                        vuln_remediation = getattr(vuln, 'remediation', None)
+                        
+                        output_data += f"{i}. {vuln_name} ({vuln_severity})\n"
+                        output_data += f"   Description: {vuln_desc}\n"
+                        output_data += f"   Location: {vuln_location}\n"
+                        if vuln_evidence:
+                            output_data += f"   Evidence: {vuln_evidence}\n"
+                        if vuln_remediation:
+                            output_data += f"   Remediation: {vuln_remediation}\n"
+                        output_data += "\n"
                 
-                output_data = f"PhantomFuzzer Web Scanning Results\n\nTarget: {url}\nIP Address: {ip_address}\nHostname: {hostname}\nReverse DNS: {hostname_from_ip}\nFound {len(results)} vulnerabilities\n\n"
-                for i, vuln in enumerate(results, 1):
-                    output_data += f"{i}. {vuln.name} ({vuln.severity})\n"
-                    output_data += f"   Description: {vuln.description}\n"
-                    output_data += f"   Location: {vuln.location}\n"
-                    if vuln.evidence:
-                        output_data += f"   Evidence: {vuln.evidence}\n"
-                    if vuln.remediation:
-                        output_data += f"   Remediation: {vuln.remediation}\n"
-                    output_data += "\n"
-            
-            # Write to file or stdout
-            if output:
-                with open(output, 'w') as f:
-                    f.write(output_data)
-                click.echo(f"Results saved to {output}")
+                # Write to file or stdout
+                if output:
+                    # Ensure directories exist before writing
+                    output_dir = os.path.dirname(output)
+                    if output_dir:
+                        os.makedirs(output_dir, exist_ok=True)
+                    with open(output, 'w') as f:
+                        f.write(output_data)
+                    click.echo(f"Results saved to {output}")
+                else:
+                    click.echo(output_data)
             else:
-                click.echo(output_data)
+                click.echo("No vulnerabilities found")
+        except Exception as e:
+            click.echo(f"Error processing results: {str(e)}", err=True)
+            if ctx.obj.get('DEBUG'):
+                import traceback
+                click.echo(traceback.format_exc(), err=True)
         else:
             click.echo("No vulnerabilities found")
     
@@ -441,15 +495,40 @@ def api_scanner(ctx, url, spec, headers, auth, output, format, stealth, ml_enhan
         results = api_scanner.scan(url)
         
         # Process and output results
-        if results:
-            click.echo(f"\nFound {len(results)} vulnerabilities")
-            
-            # Format output
-            if format == 'json':
-                output_data = json.dumps({"results": results}, indent=2)
-            elif format == 'html':
-                # Simple HTML report
-                output_data = f"""<html>
+        try:
+            if results and len(results) > 0:
+                # Ensure results is iterable
+                if not hasattr(results, '__iter__'):
+                    results = [results]
+                
+                click.echo(f"\nFound {len(results)} vulnerabilities")
+                
+                # Format output
+                if format == 'json':
+                    # Convert results to proper dict format for JSON serialization
+                    results_list = []
+                    for result in results:
+                        if hasattr(result, '__dict__'):
+                            result_dict = result.__dict__
+                        elif isinstance(result, dict):
+                            result_dict = result
+                        else:
+                            result_dict = {
+                                'name': getattr(result, 'name', 'Unknown'),
+                                'type': getattr(result, 'type', 'Unknown'),
+                                'description': getattr(result, 'description', 'N/A'),
+                                'severity': getattr(result, 'severity', 'Unknown')
+                            }
+                        results_list.append(result_dict)
+                    
+                    output_data = json.dumps({
+                        'target': url,
+                        'vulnerabilities_count': len(results),
+                        'results': results_list
+                    }, indent=2)
+                elif format == 'html':
+                    # Simple HTML report
+                    output_data = f"""<html>
 <head><title>PhantomFuzzer API Scanning Results</title></head>
 <body>
 <h1>PhantomFuzzer API Scanning Results</h1>
@@ -457,23 +536,36 @@ def api_scanner(ctx, url, spec, headers, auth, output, format, stealth, ml_enhan
 <p>Found {len(results)} vulnerabilities</p>
 <ul>
 """
-                for result in results:
-                    output_data += f"<li><strong>{result.get('type', 'Unknown')}</strong>: {result.get('description', '')}</li>\n"
-                output_data += "</ul>\n</body>\n</html>"
-            else:  # text format
-                output_data = f"PhantomFuzzer API Scanning Results\n\nTarget: {url}\nFound {len(results)} vulnerabilities\n\n"
-                for i, result in enumerate(results, 1):
-                    output_data += f"{i}. {result.get('type', 'Unknown')}: {result.get('description', '')}\n"
-            
-            # Write to file or stdout
-            if output:
-                with open(output, 'w') as f:
-                    f.write(output_data)
-                click.echo(f"Results saved to {output}")
+                    for result in results:
+                        result_type = result.get('type', 'Unknown') if isinstance(result, dict) else getattr(result, 'type', 'Unknown')
+                        result_desc = result.get('description', 'N/A') if isinstance(result, dict) else getattr(result, 'description', 'N/A')
+                        output_data += f"<li><strong>{result_type}</strong>: {result_desc}</li>\n"
+                    output_data += "</ul>\n</body>\n</html>"
+                else:  # text format
+                    output_data = f"PhantomFuzzer API Scanning Results\n\nTarget: {url}\nFound {len(results)} vulnerabilities\n\n"
+                    for i, result in enumerate(results, 1):
+                        result_type = result.get('type', 'Unknown') if isinstance(result, dict) else getattr(result, 'type', 'Unknown')
+                        result_desc = result.get('description', 'N/A') if isinstance(result, dict) else getattr(result, 'description', 'N/A')
+                        output_data += f"{i}. {result_type}: {result_desc}\n"
+                
+                # Write to file or stdout
+                if output:
+                    # Ensure directories exist before writing
+                    output_dir = os.path.dirname(output)
+                    if output_dir:
+                        os.makedirs(output_dir, exist_ok=True)
+                    with open(output, 'w') as f:
+                        f.write(output_data)
+                    click.echo(f"Results saved to {output}")
+                else:
+                    click.echo(output_data)
             else:
-                click.echo(output_data)
-        else:
-            click.echo("No vulnerabilities found")
+                click.echo("No vulnerabilities found")
+        except Exception as e:
+            click.echo(f"Error processing results: {str(e)}", err=True)
+            if ctx.obj.get('DEBUG'):
+                import traceback
+                click.echo(traceback.format_exc(), err=True)
     
     except Exception as e:
         click.echo(f"Error during API scanning: {str(e)}", err=True)
@@ -539,15 +631,40 @@ def file_scanner(ctx, path, recursive, pattern, output, format, ml_enhanced):
         results = file_scanner.scan(path)
         
         # Process and output final results summary
-        if results:
-            click.echo(f"\nScan complete. Found {len(results)} vulnerabilities or issues")
-            
-            # Format detailed output if requested
-            if format == 'json':
-                output_data = json.dumps({"results": results}, indent=2)
-            elif format == 'html':
-                # Simple HTML report
-                output_data = f"""<html>
+        try:
+            if results and len(results) > 0:
+                # Ensure results is iterable
+                if not hasattr(results, '__iter__'):
+                    results = [results]
+                
+                click.echo(f"\nScan complete. Found {len(results)} vulnerabilities or issues")
+                
+                # Format detailed output if requested
+                if format == 'json':
+                    # Convert results to proper dict format for JSON serialization
+                    results_list = []
+                    for result in results:
+                        if hasattr(result, '__dict__'):
+                            result_dict = result.__dict__
+                        elif isinstance(result, dict):
+                            result_dict = result
+                        else:
+                            result_dict = {
+                                'file': getattr(result, 'file', 'Unknown'),
+                                'type': getattr(result, 'type', 'Unknown'),
+                                'description': getattr(result, 'description', 'N/A'),
+                                'severity': getattr(result, 'severity', 'Unknown')
+                            }
+                        results_list.append(result_dict)
+                    
+                    output_data = json.dumps({
+                        'target': path,
+                        'vulnerabilities_count': len(results),
+                        'results': results_list
+                    }, indent=2)
+                elif format == 'html':
+                    # Simple HTML report
+                    output_data = f"""<html>
 <head><title>PhantomFuzzer File Scanning Results</title></head>
 <body>
 <h1>PhantomFuzzer File Scanning Results</h1>
@@ -555,21 +672,36 @@ def file_scanner(ctx, path, recursive, pattern, output, format, ml_enhanced):
 <p>Found {len(results)} vulnerabilities or issues</p>
 <ul>
 """
-                for result in results:
-                    output_data += f"<li><strong>{result.get('file', 'Unknown')}</strong>: {result.get('type', 'Unknown')} - {result.get('description', '')}</li>\n"
-                output_data += "</ul>\n</body>\n</html>"
-            else:  # text format
-                output_data = f"PhantomFuzzer File Scanning Results\n\nTarget: {path}\nFound {len(results)} vulnerabilities or issues\n\n"
-                for i, result in enumerate(results, 1):
-                    output_data += f"{i}. {result.get('file', 'Unknown')}: {result.get('type', 'Unknown')} - {result.get('description', '')}\n"
-            
-            # Write to file if output is specified
-            if output:
-                with open(output, 'w') as f:
-                    f.write(output_data)
-                click.echo(f"\nDetailed results saved to {output}")
-        else:
-            click.echo("No vulnerabilities or issues found")
+                    for result in results:
+                        result_file = result.get('file', 'Unknown') if isinstance(result, dict) else getattr(result, 'file', 'Unknown')
+                        result_type = result.get('type', 'Unknown') if isinstance(result, dict) else getattr(result, 'type', 'Unknown')
+                        result_desc = result.get('description', 'N/A') if isinstance(result, dict) else getattr(result, 'description', 'N/A')
+                        output_data += f"<li><strong>{result_file}</strong>: {result_type} - {result_desc}</li>\n"
+                    output_data += "</ul>\n</body>\n</html>"
+                else:  # text format
+                    output_data = f"PhantomFuzzer File Scanning Results\n\nTarget: {path}\nFound {len(results)} vulnerabilities or issues\n\n"
+                    for i, result in enumerate(results, 1):
+                        result_file = result.get('file', 'Unknown') if isinstance(result, dict) else getattr(result, 'file', 'Unknown')
+                        result_type = result.get('type', 'Unknown') if isinstance(result, dict) else getattr(result, 'type', 'Unknown')
+                        result_desc = result.get('description', 'N/A') if isinstance(result, dict) else getattr(result, 'description', 'N/A')
+                        output_data += f"{i}. {result_file}: {result_type} - {result_desc}\n"
+                
+                # Write to file if output is specified
+                if output:
+                    # Ensure directories exist before writing
+                    output_dir = os.path.dirname(output)
+                    if output_dir:
+                        os.makedirs(output_dir, exist_ok=True)
+                    with open(output, 'w') as f:
+                        f.write(output_data)
+                    click.echo(f"\nDetailed results saved to {output}")
+            else:
+                click.echo("No vulnerabilities or issues found")
+        except Exception as e:
+            click.echo(f"Error processing results: {str(e)}", err=True)
+            if ctx.obj.get('DEBUG'):
+                import traceback
+                click.echo(traceback.format_exc(), err=True)
     
     except Exception as e:
         click.echo(f"Error during file scanning: {str(e)}", err=True)
@@ -687,15 +819,39 @@ def api_fuzzer(ctx, target, method, headers, data, auth, iterations, delay, time
         results = api_fuzzer.run()
         
         # Process and output results
-        if results:
-            click.echo(f"\nFound {len(results)} potential vulnerabilities")
-            
-            # Format output
-            if format == 'json':
-                output_data = json.dumps({"results": results}, indent=2)
-            elif format == 'html':
-                # Simple HTML report
-                output_data = f"""<html>
+        try:
+            if results and len(results) > 0:
+                # Ensure results is iterable
+                if not hasattr(results, '__iter__'):
+                    results = [results]
+                
+                click.echo(f"\nFound {len(results)} potential vulnerabilities")
+                
+                # Format output
+                if format == 'json':
+                    # Convert results to proper dict format for JSON serialization
+                    results_list = []
+                    for result in results:
+                        if hasattr(result, '__dict__'):
+                            result_dict = result.__dict__
+                        elif isinstance(result, dict):
+                            result_dict = result
+                        else:
+                            result_dict = {
+                                'type': getattr(result, 'type', 'Unknown'),
+                                'description': getattr(result, 'description', 'N/A'),
+                                'severity': getattr(result, 'severity', 'Unknown')
+                            }
+                        results_list.append(result_dict)
+                    
+                    output_data = json.dumps({
+                        'target': target,
+                        'vulnerabilities_count': len(results),
+                        'results': results_list
+                    }, indent=2)
+                elif format == 'html':
+                    # Simple HTML report
+                    output_data = f"""<html>
 <head><title>PhantomFuzzer API Fuzzing Results</title></head>
 <body>
 <h1>PhantomFuzzer API Fuzzing Results</h1>
@@ -703,23 +859,36 @@ def api_fuzzer(ctx, target, method, headers, data, auth, iterations, delay, time
 <p>Found {len(results)} potential vulnerabilities</p>
 <ul>
 """
-                for result in results:
-                    output_data += f"<li><strong>{result.get('type', 'Unknown')}</strong>: {result.get('description', '')}</li>\n"
-                output_data += "</ul>\n</body>\n</html>"
-            else:  # text format
-                output_data = f"PhantomFuzzer API Fuzzing Results\n\nTarget: {target}\nFound {len(results)} potential vulnerabilities\n\n"
-                for i, result in enumerate(results, 1):
-                    output_data += f"{i}. {result.get('type', 'Unknown')}: {result.get('description', '')}\n"
-            
-            # Write to file or stdout
-            if output:
-                with open(output, 'w') as f:
-                    f.write(output_data)
-                click.echo(f"Results saved to {output}")
+                    for result in results:
+                        result_type = result.get('type', 'Unknown') if isinstance(result, dict) else getattr(result, 'type', 'Unknown')
+                        result_desc = result.get('description', 'N/A') if isinstance(result, dict) else getattr(result, 'description', 'N/A')
+                        output_data += f"<li><strong>{result_type}</strong>: {result_desc}</li>\n"
+                    output_data += "</ul>\n</body>\n</html>"
+                else:  # text format
+                    output_data = f"PhantomFuzzer API Fuzzing Results\n\nTarget: {target}\nFound {len(results)} potential vulnerabilities\n\n"
+                    for i, result in enumerate(results, 1):
+                        result_type = result.get('type', 'Unknown') if isinstance(result, dict) else getattr(result, 'type', 'Unknown')
+                        result_desc = result.get('description', 'N/A') if isinstance(result, dict) else getattr(result, 'description', 'N/A')
+                        output_data += f"{i}. {result_type}: {result_desc}\n"
+                
+                # Write to file or stdout
+                if output:
+                    # Ensure directories exist before writing
+                    output_dir = os.path.dirname(output)
+                    if output_dir:
+                        os.makedirs(output_dir, exist_ok=True)
+                    with open(output, 'w') as f:
+                        f.write(output_data)
+                    click.echo(f"Results saved to {output}")
+                else:
+                    click.echo(output_data)
             else:
-                click.echo(output_data)
-        else:
-            click.echo("No vulnerabilities found")
+                click.echo("No vulnerabilities found")
+        except Exception as e:
+            click.echo(f"Error processing results: {str(e)}", err=True)
+            if ctx.obj.get('DEBUG'):
+                import traceback
+                click.echo(traceback.format_exc(), err=True)
     
     except Exception as e:
         click.echo(f"Error during API fuzzing: {str(e)}", err=True)
@@ -777,18 +946,43 @@ def protocol_fuzzer(ctx, target, port, protocol, iterations, delay, timeout, out
         # Initialize and run fuzzer
         click.echo(f"Starting protocol fuzzing against {target}:{port} ({protocol})...")
         protocol_fuzzer = ProtocolFuzzer(config)
-        results = protocol_fuzzer.start()
+        results = protocol_fuzzer.run()
         
         # Process and output results
-        if results:
-            click.echo(f"\nFound {len(results)} potential vulnerabilities")
-            
-            # Format output
-            if format == 'json':
-                output_data = json.dumps({"results": results}, indent=2)
-            elif format == 'html':
-                # Simple HTML report
-                output_data = f"""<html>
+        try:
+            if results and len(results) > 0:
+                # Ensure results is iterable
+                if not hasattr(results, '__iter__'):
+                    results = [results]
+                
+                click.echo(f"\nFound {len(results)} potential vulnerabilities")
+                
+                # Format output
+                if format == 'json':
+                    # Convert results to proper dict format for JSON serialization
+                    results_list = []
+                    for result in results:
+                        if hasattr(result, '__dict__'):
+                            result_dict = result.__dict__
+                        elif isinstance(result, dict):
+                            result_dict = result
+                        else:
+                            result_dict = {
+                                'type': getattr(result, 'type', 'Unknown'),
+                                'description': getattr(result, 'description', 'N/A'),
+                                'severity': getattr(result, 'severity', 'Unknown')
+                            }
+                        results_list.append(result_dict)
+                    
+                    output_data = json.dumps({
+                        'target': f"{target}:{port}",
+                        'protocol': protocol,
+                        'vulnerabilities_count': len(results),
+                        'results': results_list
+                    }, indent=2)
+                elif format == 'html':
+                    # Simple HTML report
+                    output_data = f"""<html>
 <head><title>PhantomFuzzer Protocol Fuzzing Results</title></head>
 <body>
 <h1>PhantomFuzzer Protocol Fuzzing Results</h1>
@@ -796,23 +990,36 @@ def protocol_fuzzer(ctx, target, port, protocol, iterations, delay, timeout, out
 <p>Found {len(results)} potential vulnerabilities</p>
 <ul>
 """
-                for result in results:
-                    output_data += f"<li><strong>{result.get('type', 'Unknown')}</strong>: {result.get('description', '')}</li>\n"
-                output_data += "</ul>\n</body>\n</html>"
-            else:  # text format
-                output_data = f"PhantomFuzzer Protocol Fuzzing Results\n\nTarget: {target}:{port} ({protocol})\nFound {len(results)} potential vulnerabilities\n\n"
-                for i, result in enumerate(results, 1):
-                    output_data += f"{i}. {result.get('type', 'Unknown')}: {result.get('description', '')}\n"
-            
-            # Write to file or stdout
-            if output:
-                with open(output, 'w') as f:
-                    f.write(output_data)
-                click.echo(f"Results saved to {output}")
+                    for result in results:
+                        result_type = result.get('type', 'Unknown') if isinstance(result, dict) else getattr(result, 'type', 'Unknown')
+                        result_desc = result.get('description', 'N/A') if isinstance(result, dict) else getattr(result, 'description', 'N/A')
+                        output_data += f"<li><strong>{result_type}</strong>: {result_desc}</li>\n"
+                    output_data += "</ul>\n</body>\n</html>"
+                else:  # text format
+                    output_data = f"PhantomFuzzer Protocol Fuzzing Results\n\nTarget: {target}:{port} ({protocol})\nFound {len(results)} potential vulnerabilities\n\n"
+                    for i, result in enumerate(results, 1):
+                        result_type = result.get('type', 'Unknown') if isinstance(result, dict) else getattr(result, 'type', 'Unknown')
+                        result_desc = result.get('description', 'N/A') if isinstance(result, dict) else getattr(result, 'description', 'N/A')
+                        output_data += f"{i}. {result_type}: {result_desc}\n"
+                
+                # Write to file or stdout
+                if output:
+                    # Ensure directories exist before writing
+                    output_dir = os.path.dirname(output)
+                    if output_dir:
+                        os.makedirs(output_dir, exist_ok=True)
+                    with open(output, 'w') as f:
+                        f.write(output_data)
+                    click.echo(f"Results saved to {output}")
+                else:
+                    click.echo(output_data)
             else:
-                click.echo(output_data)
-        else:
-            click.echo("No vulnerabilities found")
+                click.echo("No vulnerabilities found")
+        except Exception as e:
+            click.echo(f"Error processing results: {str(e)}", err=True)
+            if ctx.obj.get('DEBUG'):
+                import traceback
+                click.echo(traceback.format_exc(), err=True)
     
     except Exception as e:
         click.echo(f"Error during protocol fuzzing: {str(e)}", err=True)
@@ -865,18 +1072,42 @@ def input_fuzzer(ctx, target, input_type, format, iterations, output, output_for
         # Initialize and run fuzzer
         click.echo(f"Starting input fuzzing against {target}...")
         input_fuzzer = InputFuzzer(config)
-        results = input_fuzzer.start()
+        results = input_fuzzer.run()
         
         # Process and output results
-        if results:
-            click.echo(f"\nFound {len(results)} potential vulnerabilities")
-            
-            # Format output
-            if output_format == 'json':
-                output_data = json.dumps({"results": results}, indent=2)
-            elif output_format == 'html':
-                # Simple HTML report
-                output_data = f"""<html>
+        try:
+            if results and len(results) > 0:
+                # Ensure results is iterable
+                if not hasattr(results, '__iter__'):
+                    results = [results]
+                
+                click.echo(f"\nFound {len(results)} potential vulnerabilities")
+                
+                # Format output
+                if output_format == 'json':
+                    # Convert results to proper dict format for JSON serialization
+                    results_list = []
+                    for result in results:
+                        if hasattr(result, '__dict__'):
+                            result_dict = result.__dict__
+                        elif isinstance(result, dict):
+                            result_dict = result
+                        else:
+                            result_dict = {
+                                'type': getattr(result, 'type', 'Unknown'),
+                                'description': getattr(result, 'description', 'N/A'),
+                                'severity': getattr(result, 'severity', 'Unknown')
+                            }
+                        results_list.append(result_dict)
+                    
+                    output_data = json.dumps({
+                        'target': target,
+                        'vulnerabilities_count': len(results),
+                        'results': results_list
+                    }, indent=2)
+                elif output_format == 'html':
+                    # Simple HTML report
+                    output_data = f"""<html>
 <head><title>PhantomFuzzer Input Fuzzing Results</title></head>
 <body>
 <h1>PhantomFuzzer Input Fuzzing Results</h1>
@@ -884,23 +1115,36 @@ def input_fuzzer(ctx, target, input_type, format, iterations, output, output_for
 <p>Found {len(results)} potential vulnerabilities</p>
 <ul>
 """
-                for result in results:
-                    output_data += f"<li><strong>{result.get('type', 'Unknown')}</strong>: {result.get('description', '')}</li>\n"
-                output_data += "</ul>\n</body>\n</html>"
-            else:  # text format
-                output_data = f"PhantomFuzzer Input Fuzzing Results\n\nTarget: {target}\nFound {len(results)} potential vulnerabilities\n\n"
-                for i, result in enumerate(results, 1):
-                    output_data += f"{i}. {result.get('type', 'Unknown')}: {result.get('description', '')}\n"
-            
-            # Write to file or stdout
-            if output:
-                with open(output, 'w') as f:
-                    f.write(output_data)
-                click.echo(f"Results saved to {output}")
+                    for result in results:
+                        result_type = result.get('type', 'Unknown') if isinstance(result, dict) else getattr(result, 'type', 'Unknown')
+                        result_desc = result.get('description', 'N/A') if isinstance(result, dict) else getattr(result, 'description', 'N/A')
+                        output_data += f"<li><strong>{result_type}</strong>: {result_desc}</li>\n"
+                    output_data += "</ul>\n</body>\n</html>"
+                else:  # text format
+                    output_data = f"PhantomFuzzer Input Fuzzing Results\n\nTarget: {target}\nFound {len(results)} potential vulnerabilities\n\n"
+                    for i, result in enumerate(results, 1):
+                        result_type = result.get('type', 'Unknown') if isinstance(result, dict) else getattr(result, 'type', 'Unknown')
+                        result_desc = result.get('description', 'N/A') if isinstance(result, dict) else getattr(result, 'description', 'N/A')
+                        output_data += f"{i}. {result_type}: {result_desc}\n"
+                
+                # Write to file or stdout
+                if output:
+                    # Ensure directories exist before writing
+                    output_dir = os.path.dirname(output)
+                    if output_dir:
+                        os.makedirs(output_dir, exist_ok=True)
+                    with open(output, 'w') as f:
+                        f.write(output_data)
+                    click.echo(f"Results saved to {output}")
+                else:
+                    click.echo(output_data)
             else:
-                click.echo(output_data)
-        else:
-            click.echo("No vulnerabilities found")
+                click.echo("No vulnerabilities found")
+        except Exception as e:
+            click.echo(f"Error processing results: {str(e)}", err=True)
+            if ctx.obj.get('DEBUG'):
+                import traceback
+                click.echo(traceback.format_exc(), err=True)
     
     except Exception as e:
         click.echo(f"Error during input fuzzing: {str(e)}", err=True)
@@ -1034,10 +1278,11 @@ def generate_payload(ctx, category, subcategory, count, output, format, context)
             payloads = [payload_gen.get_payload(category, subcategory, ctx_dict)]
         else:
             # Modify context to include subcategory if provided
-            if subcategory and ctx_dict is None:
-                ctx_dict = {'subcategory': subcategory}
-            elif subcategory:
-                ctx_dict['subcategory'] = subcategory
+            if subcategory:
+                if ctx_dict is None:
+                    ctx_dict = {'subcategory': subcategory}
+                else:
+                    ctx_dict['subcategory'] = subcategory
             payloads = payload_gen.get_multiple_payloads(category, count, ctx_dict)
         
         # Format output
