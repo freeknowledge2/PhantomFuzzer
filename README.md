@@ -38,7 +38,7 @@ PhantomFuzzer is an advanced security testing toolkit that combines traditional 
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/ghostsec420/PhantomFuzzer.git
+   git clone https://github.com/freeknowledge2/PhantomFuzzer
    cd PhantomFuzzer
    ```
 
